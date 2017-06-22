@@ -1,0 +1,124 @@
+/*------------------------------------------
+            Calendar Blog
+-------------------------------------------*/
+
+.calendar-blog {
+    min-height: 150px;
+    position: relative;
+    margin: auto;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    background-size: calc(100% + 100px);
+    background-clip: content-box; /* Firefox issue fix */
+}
+
+.calendar-blog .blog-container {
+    position: relative;
+    float: left;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    width: 20%;
+    z-index: 5;
+    height: 300px;
+}
+
+.calendar-blog .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.calendar-blog .blog-day {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: normal;
+    position: absolute;
+    top: 6%;
+    left: 7%;
+    z-index: 3;
+    transition: color 0.3s;
+}
+
+.calendar-blog .blog-month,
+.calendar-blog .blog-year {
+    font-size: 13px;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    text-transform: uppercase;
+    line-height: 13px;
+    font-weight: bold;
+    z-index: 3;
+    transition: color 0.3s;
+}
+
+.calendar-blog .blog-year {
+    top: 30%;
+}
+
+.calendar-blog .blog-title {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: normal;
+    position: absolute;
+    bottom: 14%;
+    left: 7%;
+    z-index: 3;
+    transition: color 0.3s;
+    width: 70%;
+}
+
+.calendar-blog .blog-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+}
+
+.calendar-blog .blog-details {
+    font-size: 14px;
+    position: absolute;
+    bottom: 8%;
+    left: 7%;
+    line-height: 14px;
+    font-weight: normal;
+    width: 91%;
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.calendar-blog .blog-container:hover .image,.calendar-blog .blog-container.hovered .image{
+    -webkit-backface-visibility: hidden;
+    opacity: 0.9;
+}
+
+.calendar-blog .blog-container:hover .blog-details {
+    opacity: 1;
+}
+
+.calendar-blog .blog-comment {
+    background-repeat: no-repeat;
+    width: 13%;
+    height: 15px;
+    float: left;
+    font-size: 13px;
+    font-weight: normal;
+    padding-left: 7%;
+}
+
+.calendar-blog .blog-cat {
+    width: 87%;
+    float: left;
+}

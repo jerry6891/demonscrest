@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+html {
+    direction: ltr;
+}
+
+body {
+
+}
+
+
+body #wpcontent, body #wpfooter {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+input[type=checkbox]:checked:before {
+    margin: -3px 1px 0 -3px;
+}
+
+.media-frame.hide-menu .media-frame-content, .media-frame.hide-menu .media-frame-router, .media-frame.hide-menu .media-frame-title, .media-frame.hide-menu .media-frame-toolbar {
+    right: 0;
+    direction: rtl;
+}

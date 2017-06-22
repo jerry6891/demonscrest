@@ -1,0 +1,58 @@
+/*----------------------------------------------------------
+            Client Carousel
+--------------------------------------------------------- */
+.slick-list.slick-list{margin: 0 auto;}
+
+.slick-slide .client-logo img{
+    margin: auto;
+}
+
+.wrap-client-carousel{margin: 0 auto;}
+.wrap-client-carousel button{display: none;}
+
+.wrap-client-carousel .slick-slide,
+.wrap-client-carousel .slick-slide .wrap,
+.wrap-client-carousel .client-logo{
+    outline: none;
+    box-shadow: none;
+}
+
+.wrap-client-carousel .slick-track{
+    display: flex;
+    align-items: center;
+}
+
+.wrap-client-carousel .slick-dots li{
+    width: 12px;
+    height: 12px;
+}
+
+.wrap-client-carousel .slick-dots li button{
+    background-color: #d3d3d3;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    text-indent: -999px;
+    transition: background-color .3s;
+}
+
+.wrap-client-carousel .slick-dots li button:hover,
+.wrap-client-carousel .slick-dots li.slick-active button{
+    background-color: #8f8f8f;
+}
+
+.wrap-client-carousel .slick-slide{
+    margin: 0 15px;
+}
+
+.slick-slide .slick-dots li button:before{
+    content: '';
+}
+
+.slick-slide .slick-arrow{
+    display: none !important;
+}
+
+.wrap-client-carousel .slick-arrow {
+    display: none !important;
+}

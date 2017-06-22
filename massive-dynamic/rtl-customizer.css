@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+html {
+    direction: ltr;
+}
+
+body {
+
+}
+
+
+body .wp-full-overlay.expanded {
+    margin-right: inherit;
+}
+
+body .wp-full-overlay-main {
+    margin-right: 30px !important;
+}
+
+body .wp-full-overlay, body .wp-full-overlay-main, body .wp-full-overlay-sidebar {
+    left: 0;
+    right: 0;
+    margin-right: 0;
+}
+
+body .section-open #customize-theme-controls {
+    left: -100%;
+}
+
+body .in-sub-panel #customize-info, body .in-sub-panel #customize-theme-controls>ul>.accordion-section {
+    right: -100%;
+}
+
+body .in-sub-panel .wp-full-overlay-sidebar .wp-full-overlay-header {
+    padding-left: 62px;
+    padding-right: inherit;
+}
+
+#customize-footer-actions {
+    left: 0;
+    right: inherit;
+}
+
+body .in-sub-panel.section-open #customize-theme-controls > ul li > ul.accordion-sub-container {
+    right: inherit;
+}
+
+body #customize-theme-controls .control-section>h3.accordion-section-title {
+    left: 0;
+    padding-right: 30px;
+    right: 0;
+}
+
+body #customize-theme-controls .accordion-section-content {
+    right: inherit;
+    left: 100%;
+}
+
+/* customizer menu flash */
+
+.body js .accordion-section-title:after {
+    right: 10px;
+    left: initial;
+}
+
+body .accordion-section-title:after, .control-section .accordion-section-title:after {
+    right: 20px;
+    left: initial;
+}
+
+body .accordion-section-title:after,
+body .control-section .accordion-section-title:after,
+body .nav-menus-php .item-edit:before,
+body .widget-top a.widget-action:after {
+    left: initial;
+}

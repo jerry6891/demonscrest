@@ -1,0 +1,73 @@
+/**************************************
+                Quote
+**************************************/
+/* message part */
+
+.sc-quote {
+    margin: auto;
+}
+
+.sc-quote .message {
+    background: #f3f3f3;
+    padding: 4em 6%;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.sc-quote .message:after {
+    content: "";
+    width: 0;
+    height: 0;
+    /* border-left: 15px solid transparent; */
+    border-right: 25px solid transparent;
+    border-top: 20px solid #f3f3f3;
+    position: absolute;
+    bottom: -19px;
+    left: 40px;
+    z-index: 2;
+}
+
+.sc-quote .message p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.sc-quote .message i {
+    font-size: 30px;
+    position: absolute;
+    right: 35px;
+    bottom: 30px;
+}
+
+/* main part */
+
+.sc-quote .main {
+    display: inline-block;
+    float: left;
+}
+
+.sc-quote .main img.quote-image {
+    width: 81px;
+    height: 81px;
+    border-radius: 50%;
+    float: left;
+}
+
+.sc-quote .main .titles {
+    display: inline-block;
+    float: left;
+    padding: 1.5em;
+}
+
+.sc-quote .main .titles h3 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+.sc-quote .main .titles h4 {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 14px;
+}

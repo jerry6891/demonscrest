@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'massivebuilderfonts';
+    src: url('../font/massivebuilderfonts.eot?k3y70y');
+    src: url('../font/massivebuilderfonts.eot?k3y70y#iefix') format('embedded-opentype'),
+    url('../font/massivebuilderfonts.ttf?k3y70y') format('truetype'),
+    url('../font/massivebuilderfonts.woff?k3y70y') format('woff'),
+    url('../font/massivebuilderfonts.svg?k3y70y#massivebuilderfonts') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="mdb-"], [class*=" mdb-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'massivebuilderfonts' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="mdb-"]:before,
+[class*=" mdb-"]:before{
+    content: "\e95f";
+}
+.mdb-accordion:before {
+    content: "\e900";
+}
+.mdb-article-box:before {
+    content: "\e901";
+}
+.mdb-blog-calendar:before {
+    content: "\e902";
+}
+.mdb-blog-carousel:before {
+    content: "\e903";
+}
+.mdb-blog-classic:before {
+    content: "\e904";
+}
+.mdb-blog-masonry:before {
+    content: "\e905";
+}
+.mdb-business-subscribe:before {
+    content: "\e906";
+}
+.mdb-business-tab:before {
+    content: "\e907";
+}
+.mdb-business-toggle:before {
+    content: "\e908";
+}
+.mdb-button:before {
+    content: "\e909";
+}
+.mdb-call-to-action:before {
+    content: "\e90a";
+}
+.mdb-centeralignsvg:before {
+    content: "\e90b";
+}
+.mdb-client:before {
+    content: "\e90c";
+}
+.mdb-client-carousel:before {
+    content: "\e90d";
+}
+.mdb-client-normal:before {
+    content: "\e90e";
+}
+.mdb-col1-1svg:before {
+    content: "\e90f";
+}
+.mdb-col1-2svg:before {
+    content: "\e910";
+}
+.mdb-col1-3svg:before {
+    content: "\e911";
+}
+.mdb-col1-4svg:before {
+    content: "\e912";
+}
+.mdb-col2-4svg:before {
+    content: "\e913";
+}
+.mdb-col3-4svg:before {
+    content: "\e914";
+}
+.mdb-col3-9svg:before {
+    content: "\e915";
+}
+.mdb-contact:before {
+    content: "\e916";
+}
+.mdb-count-box:before {
+    content: "\e917";
+}
+.mdb-count-down:before {
+    content: "\e918";
+}
+.mdb-counter:before {
+    content: "\e919";
+}
+.mdb-counter-card:before {
+    content: "\e91a";
+}
+.mdb-custom-google-map:before {
+    content: "\e91b";
+}
+.mdb-deletesvg:before {
+    content: "\e91c";
+}
+.mdb-display-slider:before {
+    content: "\e91d";
+}
+.mdb-double-slider:before {
+    content: "\e91e";
+}
+.mdb-duplicatesvg:before {
+    content: "\e91f";
+}
+.mdb-empty-space:before {
+    content: "\e920";
+}
+.mdb-facebook:before {
+    content: "\e921";
+}
+.mdb-fancy-text:before {
+    content: "\e922";
+}
+.mdb-feature-image:before {
+    content: "\e923";
+}
+.mdb-full-width-button:before {
+    content: "\e924";
+}
+.mdb-google-plus:before {
+    content: "\e925";
+}
+.mdb-horizontal-tabs:before {
+    content: "\e926";
+}
+.mdb-icon:before {
+    content: "\e927";
+}
+.mdb-icon-box-new:before {
+    content: "\e928";
+}
+.mdb-icon-box-side:before {
+    content: "\e929";
+}
+.mdb-icon-box-side-2:before {
+    content: "\e92a";
+}
+.mdb-icon-box-top:before {
+    content: "\e92b";
+}
+.mdb-image-box-fancy:before {
+    content: "\e92c";
+}
+.mdb-image-box-full-width:before {
+    content: "\e92d";
+}
+.mdb-image-box:before {
+    content: "\e92e";
+}
+.mdb-info-box:before {
+    content: "\e92f";
+}
+.mdb-instagram:before {
+    content: "\e930";
+}
+.mdb-layoutsvg:before {
+    content: "\e931";
+}
+.mdb-leftalignsvg:before {
+    content: "\e932";
+}
+.mdb-list:before {
+    content: "\e933";
+}
+.mdb-master-slider:before {
+    content: "\e934";
+}
+.mdb-mobile-slider:before {
+    content: "\e935";
+}
+.mdb-modern-subscribe:before {
+    content: "\e936";
+}
+.mdb-modern-tabs:before {
+    content: "\e937";
+}
+.mdb-movesvg:before {
+    content: "\e938";
+}
+.mdb-music:before {
+    content: "\e939";
+}
+.mdb-optionsvg:before {
+    content: "\e93a";
+}
+.mdb-phone:before {
+    content: "\e93b";
+}
+.mdb-pie-chart:before {
+    content: "\e93c";
+}
+.mdb-pinterest:before {
+    content: "\e93d";
+}
+.mdb-pixflow-price-box:before {
+    content: "\e93e";
+}
+.mdb-pixflow-price-table:before {
+    content: "\e93f";
+}
+.mdb-pixflow-slider:before {
+    content: "\e940";
+}
+.mdb-portfolio:before {
+    content: "\e941";
+}
+.mdb-price-table:before {
+    content: "\e942";
+}
+.mdb-price-table-two:before {
+    content: "\e943";
+}
+.mdb-process-panel:before {
+    content: "\e944";
+}
+.mdb-process-steps:before {
+    content: "\e945";
+}
+.mdb-product-categories:before {
+    content: "\e946";
+}
+.mdb-product-compare:before {
+    content: "\e947";
+}
+.mdb-products:before {
+    content: "\e948";
+}
+.mdb-qoute:before {
+    content: "\e949";
+}
+.mdb-quote:before {
+    content: "\e94a";
+}
+.mdb-revolution-slider:before {
+    content: "\e94b";
+}
+.mdb-rightalignsvg:before {
+    content: "\e94c";
+}
+.mdb-row:before {
+    content: "\e94d";
+}
+.mdb-rowsettingsvg:before {
+    content: "\e94e";
+}
+.mdb-separator:before {
+    content: "\e94f";
+}
+.mdb-settingsvg:before {
+    content: "\e950";
+}
+.mdb-settingsvg-2:before {
+    content: "\e951";
+}
+.mdb-shop:before {
+    content: "\e952";
+}
+.mdb-showcase:before {
+    content: "\e953";
+}
+.mdb-skill-pie-chart:before {
+    content: "\e954";
+}
+.mdb-skill-pie-chart-2:before {
+    content: "\e955";
+}
+.mdb-skills:before {
+    content: "\e956";
+}
+.mdb-skills-2:before {
+    content: "\e957";
+}
+.mdb-slider-carousel:before {
+    content: "\e958";
+}
+.mdb-split-box:before {
+    content: "\e959";
+}
+.mdb-statistic:before {
+    content: "\e95a";
+}
+.mdb-subscribe:before {
+    content: "\e95b";
+}
+.mdb-tablet-slider:before {
+    content: "\e95c";
+}
+.mdb-tabs:before {
+    content: "\e95d";
+}
+.mdb-team-carousel:before {
+    content: "\e95e";
+}
+.mdb-team-member-classic:before {
+    content: "\e95f";
+}
+.mdb-team-member-crousel:before {
+    content: "\e960";
+}
+.mdb-testimonial-carousel:before {
+    content: "\e961";
+}
+.mdb-testimonial-classic:before {
+    content: "\e962";
+}
+.mdb-text:before {
+    content: "\e963";
+}
+.mdb-text-box:before {
+    content: "\e964";
+}
+.mdb-text-in-box:before {
+    content: "\e965";
+}
+.mdb-toggle:before {
+    content: "\e966";
+}
+.mdb-twitter:before {
+    content: "\e967";
+}
+.mdb-video:before {
+    content: "\e968";
+}
+.mdb-menu:before {
+    content: "\e93d";
+}

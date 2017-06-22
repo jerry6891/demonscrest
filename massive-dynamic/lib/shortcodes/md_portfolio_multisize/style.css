@@ -1,0 +1,454 @@
+/* -------------------------------------------------
+            Portfolio Filter
+----------------------------------------------------*/
+
+.portfolio .filter ul {
+    list-style: none;
+}
+
+.portfolio .filter li {
+    display: inline-block;
+    margin-right: 13px;
+}
+
+.portfolio .filter li a {
+    font-size: 13px;
+}
+
+.portfolio .filter li.have-counter {
+    position: relative;
+}
+
+.portfolio .filter.yes li{
+    margin-right: 40px;
+}
+
+.portfolio .filter .md_portfolio_counter {
+    position: absolute;
+    top: -0;
+    font-size: 10px;
+    right: -18px;
+    min-width: 20px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 10px;
+    font-weight: 400;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+}
+/* -------------------------------------------------
+                Portfolio Multisize Shortcode
+----------------------------------------------------*/
+
+.portfolio .heading {
+    margin-bottom: 25px;
+}
+
+.portfolio .heading .title {
+    font-weight: 300;
+    font-size: 44px;
+}
+
+.portfolio .heading .filter {
+    line-height: 44px;
+}
+
+.portfolio .item-image {
+    background-position: center;
+    background-size: cover;
+}
+
+/******** Inside Meta ********/
+
+body:not(.compose-mode) .portfolio.inside .item-wrap.portfolio-popup {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio.inside .overlay-background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+
+.portfolio.inside .item-meta {
+    position: absolute;
+    left: 30px;
+    bottom: 35px;
+    max-width: 210px;
+}
+
+.compose-mode .portfolio.inside .item-meta,
+.compose-mode .portfolio.inside .md-post-like{display: none;}
+
+
+.portfolio.inside .item-title,
+.portfolio.inside .item-category {
+    margin: 0;
+}
+
+.portfolio.inside .item-title {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    opacity: 0;
+    padding-right: 100px;
+    margin-left: -100px;
+    transition: all 300ms 100ms;
+    text-align: left;
+}
+
+.portfolio .item-title a{
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+}
+
+.portfolio.inside .item-title a{
+    font-weight: 500;
+}
+
+.portfolio.inside .thumbnail-small .item-title {
+    font-size: 22px;
+    line-height: 22px;
+}
+
+.portfolio.inside .item-category {
+    font-size: 14px;
+    line-height: 14px;
+    opacity: 0;
+    margin-left: 25px;
+    transition: opacity 300ms, margin 300ms;
+    text-align: left;
+}
+
+/**** Inside like ****/
+.portfolio.inside .md-post-like {
+    position: absolute;
+    left: 30px;
+    top: 25px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 300ms 100ms;
+}
+
+.portfolio.inside .like-heart {
+    font-size: 18px;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 300ms;
+}
+
+.portfolio.inside .like-heart:hover {
+    opacity: 1;
+}
+
+.portfolio.inside .like-count {
+    font-size: 14px;
+}
+
+/******* Inside Hover ********/
+.portfolio.inside .item:hover .overlay-background,
+.portfolio.inside .item:hover .item-title,
+.portfolio.inside .item:hover .md-post-like {
+    opacity: 1;
+}
+
+@keyframes fadeInFromNone {
+    00% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block!important;
+        opacity: 0;
+    }
+
+    100% {
+        display: block!important;
+        opacity: 1;
+    }
+}
+
+.portfolio.inside .item:hover .item-title {
+    margin-left: 0;
+    padding-right: 0;
+}
+
+.portfolio.inside .item:hover .item-category {
+    margin-left: 0;
+    opacity: 0.8;
+}
+
+/* Outside meta */
+.portfolio.outside .item-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-multisize.outside .portfolio-item .item-image{
+    overflow: hidden;
+    z-index: 0;
+}
+
+body:not(.compose-mode) .portfolio-multisize.outside .portfolio-item,
+.compose-mode.gizmo-off .portfolio-multisize.outside .portfolio-item{
+    overflow: hidden;
+}
+
+.portfolio.outside .md-post-like {
+    position: absolute;
+    right: 35px;
+    bottom: 20px;
+    text-align: center;
+}
+
+.portfolio.outside .like-heart {
+    font-size: 25px;
+    display: block;
+    opacity: 0.6;
+    transition: opacity 300ms;
+}
+
+.portfolio.outside .like-heart:hover {
+    opacity: 1;
+}
+
+.portfolio.outside .like-count {
+    font-size: 12px;
+}
+
+.portfolio.outside .item-meta {
+    text-align: center;
+    padding: 25px 0 25px;
+    position: relative;
+}
+
+.portfolio.outside .item-title,
+.portfolio.outside .item-category {
+    margin: 0;
+}
+
+.portfolio.outside .item-title {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 7px;
+    transition: margin-top .3s cubic-bezier(0.85, 0, .15, 1)
+}
+
+.portfolio .item-title a{
+    outline: none;
+}
+
+.portfolio.outside .item-category {
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.portfolio.outside .item-meta .line {
+    position: absolute;
+    left: 50%;
+    top: -37px;
+    width: 1px;
+    height: 55px;
+    transform: scaleY(0);
+    /*transform-origin: center bottom;*/
+    transform-origin: center center;
+    transition: transform .3s cubic-bezier(0.85, 0, .15, 1), top .3s cubic-bezier(0.85, 0, .15, 1);
+}
+
+body:not(.compose-mode) .portfolio.outside .item:hover .line,
+.compose-mode.gizmo-off .portfolio.outside .item:hover .line{
+    transform: scaleY(1);
+    top: -37px;
+}
+
+.portfolio.outside .item-image div {
+    position: absolute;
+    z-index: 3;
+    transition: transform 250ms cubic-bezier(0.85, 0, .15, 1);
+}
+
+.portfolio.outside .item-image .border-top,
+.portfolio.outside .item-image .border-bottom {
+    height: 8px;
+    width: 100%;
+    left: 0;
+}
+
+.portfolio.outside .item-image .border-top {
+    top: 0;
+    transform: translateX(0) translateY(-15px) translateZ(0);
+}
+
+.portfolio.outside .item-image .border-bottom {
+    bottom: 0;
+    transform: translateX(0) translateY(15px) translateZ(0);
+}
+
+.portfolio.outside .item-image .border-left,
+.portfolio.outside .item-image .border-right {
+    width: 8px;
+    height: 100%;
+    top: 0;
+}
+
+.portfolio.outside .item-image .border-left {
+    left: 0;
+    transform: translateX(-15px) translateY(0) translateZ(0);
+}
+
+.portfolio.outside .item-image .border-right {
+    right: 0;
+    transform: translateX(15px) translateY(0) translateZ(0);
+}
+
+body:not(.compose-mode) .portfolio.outside .item:hover .item-image div ,
+.compose-mode.gizmo-off .portfolio.outside .item:hover .item-image div {
+    transform: translateX(0) translateY(0) translateZ(0);
+}
+
+/**** Portfolio load more ****/
+.portfolio .loadmore-button,
+.portfolio .shortcode-btn {
+    margin-top: 80px;
+}
+
+body.gizmo-off .portfolio-panel-setting{
+    display: none;
+}
+
+.portfolio-multisize .portfolio-panel-setting {
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    margin: 0 auto;
+    right: 40px;
+    transition: opacity .3s, top .3s,width 450ms cubic-bezier(.6,0,.4,1);
+    opacity: 0;
+    z-index: 1;
+    height: 43px;
+    padding: 0 0 9px;
+}
+
+.portfolio-multisize .portfolio-panel-setting .tooltip{
+    background: rgba(0,0,0,.9);
+    color: #fff;
+    font-size: 10px;
+    padding: 8px;
+    width: 110px;
+    text-align: center;
+    position: absolute;
+    top: -33px;
+    left: -157%;
+    display: none;
+    opacity: 0;
+}
+
+.portfolio-multisize .portfolio-panel-setting:hover .tooltip{
+    display: block;
+}
+
+.portfolio-multisize .portfolio-panel-setting .tooltip:after{
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    left: 50%;
+    bottom: -7px;
+    transform: rotate(45deg) translateX(-50%);
+    background: rgba(0,0,0,.9);
+    position: absolute;
+}
+
+.portfolio-multisize .portfolio-panel-setting span {
+    display: block;
+    width: 7px;
+    height: 14px;
+    background: rgba(255,255,255,.6);
+    margin-left: 2px;
+    transition: background .3s, opacity .3s;
+    cursor: pointer;
+    float: left;
+}
+
+.portfolio-multisize .portfolio-panel-setting span:after{
+    content: "";
+    width: 2px;
+    height: 14px;
+    display: inline-block;
+    position: relative;
+    left: 7px;
+    margin: 0;
+    top: -1px;
+
+
+}
+
+.portfolio-multisize .portfolio-panel-setting span:hover {
+    background: rgba(255,255,255,1);
+}
+
+/** Popup **/
+div.mfp-ready{
+    z-index: 99991;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+.mfp-wrap{
+    transition: all 0.4s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+    opacity: 1;
+}
+
+.mfp-with-zoom.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container,
+.mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+    transition: all 0.4s ease-out;
+}
+
+/* hover state */
+.portfolio-panel-setting .state{
+    height: 14px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 2px;
+    z-index: -1;
+}
+
+.thumbnail-small .portfolio-panel-setting:not(.hovering) .state,
+.state.small,
+.active-small{
+    width:7px;
+}
+
+.thumbnail-medium .portfolio-panel-setting:not(.hovering) .state,
+.state.average,
+.active-average{
+    width:16px;
+}
+
+.thumbnail-large .portfolio-panel-setting:not(.hovering) .state,
+.state.large,
+.active-large{
+    width:25px;
+}

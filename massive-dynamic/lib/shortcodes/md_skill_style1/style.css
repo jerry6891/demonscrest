@@ -1,0 +1,55 @@
+/* -------------------------------------------------
+                Skill Style 1
+----------------------------------------------------*/
+
+.skill-style1 {
+    max-width: 470px;
+}
+
+.skill-style1.md-align-left{margin-left: 0}
+
+.skill-style1.md-align-center{margin: 0 auto;}
+
+.skill-style1.md-align-right{margin-left:auto; margin-right: 0}
+
+.skill-style1 .bar-main-container {
+    overflow: hidden;
+    vertical-align: middle;
+    height: 63px;
+}
+
+.skill-style1 .bar-percentage{
+    float: left;
+    margin-right: 15px;
+    font-size: 20px;
+    text-align: left;
+    margin-top: 3px;
+    width: 45px;
+}
+
+.skill-style1 .bar-container{
+    height: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    vertical-align: middle;
+    display: list-item;
+    line-height: 100%;
+    opacity: 0;
+}
+
+.skill-style1 .bar{
+    height: 4px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.skill-style1 .bar-title{
+    margin-top: 3px;
+    left: 3px;
+    position: relative;
+    font-size: 13px;
+}
+
+.skill-style1 .box_size_container {
+    float: left;
+}

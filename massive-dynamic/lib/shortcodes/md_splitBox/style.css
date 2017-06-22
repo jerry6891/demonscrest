@@ -1,0 +1,131 @@
+/*************************
+    Split Box
+*************************/
+.splitBox-holder{
+    position: relative;
+
+    overflow: hidden;
+    height: 100%;
+}
+
+.splitBox-holder .image-holder{
+    height: 100%;
+    width: 50%;
+    top: 0;
+    position: absolute;
+    background-size: cover;
+    background-position: center center;
+    transform: scale(1.1);
+    z-index: 1;
+    transition:transform .3s;
+}
+
+.splitBox-holder:hover .image-holder {
+    transform: scale(1);
+}
+
+.splitBox-holder .text-holder{
+    height: 100%;
+    width: 50%;
+    top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.splitBox-holder .text-holder .subtitle{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 19px;
+    width: 100%;
+}
+
+.splitBox-holder .text-holder .title{
+    width: 100%;
+}
+.splitBox-holder .text-holder p{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    margin-top: 15px;
+    width: 100%
+}
+.splitBox-holder .splitBox-button{
+    margin-top: 25px;
+}
+
+.splitBox-holder .arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid;
+    position: absolute;
+    top: calc(50% - 15px);
+    z-index: 2;
+    margin-left: 0;
+}
+
+.md-splitBox.sb-left .text-holder .fixed-width {
+    margin-left: 0;
+    transition: margin-left .3s;
+}
+
+.md-splitBox.sb-left .splitBox-holder:hover .fixed-width {
+    margin-left: 50px;
+}
+
+.md-splitBox.sb-right .text-holder .fixed-width {
+    margin-right: 0;
+    transition: margin-right .3s;
+}
+
+.md-splitBox.sb-right .splitBox-holder:hover .fixed-width {
+    margin-right: 50px;
+}
+
+.md-splitBox.sb-left  .image-holder{
+    left: 50%;
+}
+
+.md-splitBox.sb-right  .image-holder{
+    left: 0;
+}
+
+.md-splitBox.sb-left .splitBox-holder .text-holder {
+    left: 0;
+    padding: 0 95px 0 70px;
+    transition: width 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.md-splitBox.sb-right .splitBox-holder .fixed-width{
+    display: inline-block;
+}
+
+.md-splitBox.sb-right .splitBox-holder .text-holder{
+    left: 50%;
+    text-align: left;
+    padding: 0 95px 0 70px;
+    float: left;
+    margin-left: 0;
+    transition: width 0.3s,margin-left 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.md-splitBox.sb-right .splitBox-holder:hover .text-holder{
+    margin-left: -50px;
+}
+
+.md-splitBox.sb-right .splitBox-holder .arrow-right{
+    transform: rotateY(180deg);
+    left: 50%;
+    margin-left: -15px;
+    transition: left 0.3s,margin-left 0.3s;
+}
+
+.md-splitBox.sb-left .splitBox-holder .arrow-right{
+    left: 50%;
+    transition: left 0.3s;
+}

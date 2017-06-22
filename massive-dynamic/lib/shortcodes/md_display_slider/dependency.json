@@ -1,0 +1,8 @@
+{
+    "js":[
+        "assets/js/jquery.flexslider-min.js"
+    ],
+    "css": [
+        "assets/css/flexslider.min.css"
+    ]
+}

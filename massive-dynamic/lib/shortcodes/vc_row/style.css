@@ -1,0 +1,200 @@
+/*---------------------------------------------------------
+                        Row Shortcode
+---------------------------------------------------------*/
+.vc_row.hide-overflow:not(.vc_inner){overflow: hidden;}
+/* flex style for row */
+.row-equal-column-height .wrap,
+.row-equal-column-height .wpb_column{
+    display: flex;
+
+}
+
+
+body.compose-mode .row-equal-column-height .vc_column_container{
+    height: 100%;
+}
+
+.row-content-top:not(.row-equal-column-height) .wrap{
+    display: flex;
+    align-items: flex-start;
+
+}
+
+.row-content-middle:not(.row-equal-column-height) .wrap{
+    display: flex;
+    align-items: center;
+
+}
+
+.row-content-bottom:not(.row-equal-column-height) .wrap{
+    display: flex;
+    align-items: flex-end;
+}
+
+/* equal height - top */
+.row-equal-column-height.row-content-top .wrap .vc_column-inner{
+    display: flex;
+    align-items: flex-start;
+}
+
+/* equal height - middle */
+.row-equal-column-height.row-content-middle .wrap .vc_column-inner{
+    display: flex;
+    align-items: center;
+}
+
+/* equal height - bottom */
+.row-equal-column-height.row-content-bottom .wrap .vc_column-inner{
+    display: flex;
+    align-items: flex-end;
+}
+
+.row-equal-column-height > .wrap > .vc_column_container > .vc_column-inner > .wpb_wrapper,
+.row-equal-column-height > .wrap > .mBuilder-element > .vc_column_container > .vc_column-inner > .wpb_wrapper{
+    width: 100%;
+}
+
+/* END flex style for row */
+
+
+
+.vc_row.vc_parallax {
+    position: relative;
+    overflow: visible;
+}
+
+.vc_parallax>* {
+    position: relative;
+    z-index: 1;
+}
+
+.vc_row{
+    position: relative;
+    backface-visibility: hidden;
+}
+
+.vc_row:not(.vertical-aligned){
+    display: flex;
+    width:100%;
+}
+
+.vc_row > .wrap:not(.box_size_container){
+    width:100%;
+}
+
+.vc_row.row_video,
+.vc_row.sloped_row{
+    overflow: hidden;
+}
+
+
+.row-image {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Parallax */
+.row-image-normal.isParallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.row-image-fixed.isParallax:after {
+    content: "";
+    display: block;
+    background-attachment: fixed;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+}
+body.one_page_scroll .row-image-fixed.isParallax:after {
+    background-attachment: local;
+}
+
+/* Bg Repeat */
+.row-image.repeat{
+    background-repeat: repeat;
+    background-size: inherit !important;
+}
+
+.row-image.repeat:after{
+    background-repeat: repeat;
+    background-size: inherit !important;
+}
+
+/* End */
+
+.sectionOverlay:after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block !important;
+}
+
+.sectionOverlay .row-image,
+.sectionOverlay .row-image-inner-row {
+    width: 100%;
+    position: absolute !important;
+    height: 100%;
+    left: 0;
+    z-index: 0 !important;
+    top: 0;
+    margin: auto;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sectionOverlay.box_size {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.sectionOverlay .box_size_container {
+    float: none;
+    margin:0 auto;
+}
+
+/* Sloped Edge */
+.sloped-edge {
+    height: 105px;
+    position: absolute !important;
+    left: -10%;
+    right: -10%;
+}
+
+.sloped-edge.top-edge {
+    top: -55px;
+}
+
+.sloped-edge.bottom-edge {
+    bottom: -55px;
+}
+
+/* Inner Row */
+
+.vc_row.full_size {
+    margin: 0;
+}
+
+video.row-videobg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

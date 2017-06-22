@@ -1,0 +1,41 @@
+/**************************************
+                Text Box
+**************************************/
+.text-box{
+    width: 100.3%;
+    min-height: 300px;
+    position: relative;
+    transition: background 0.3s;
+}
+.text-box .text-box-content{
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.text-box .text-box-icon{
+    font-size: 50px;
+    text-align: center;
+    transition: color 0.3s;
+}
+.text-box .text-box-title{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 28px;
+    transition: color 0.3s;
+}
+.text-box .text-box-description{
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    text-align: center;
+    position: absolute;
+    top: 74%;
+    left:50%;
+    transform:translateZ(0) translate(-50%,-60%);
+    width: 70%;
+    opacity: 0;
+}

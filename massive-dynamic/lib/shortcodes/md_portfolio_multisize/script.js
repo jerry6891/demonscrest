@@ -1,0 +1,355 @@
+// @TODO : refactor
+function pixflow_portfolioMultisize($portfolioIsotope, count) {
+    "use strict";
+
+    var $portfolio = $('.portfolio-multisize');
+    if (!$portfolio.length) return;
+
+    $portfolio.each(function () {
+        var $this = $(this),
+            $isotope = $this.find('.isotope'),
+            $items = $this.find('.item'),
+            padding = $this.attr('data-items-padding'),
+            $filters = $this.find('.filter a'),
+            col;
+
+
+        col = pixflow_itemSize($this, $items, padding);
+        //Isotope
+        var scroll = $(window).scrollTop();
+
+        if (typeof $isotope.data('isotope') != 'undefined') {
+            $isotope.isotope('destroy');
+        }
+        $(window).scrollTop(scroll);
+        if ($portfolioIsotope && $portfolioIsotope.length && $isotope[0] == $portfolioIsotope[0]) {
+            var $newItems = $('<div></div>');
+            for (var i = 1; i <= count; i++) {
+                $newItems.append($isotope.find('.item:nth-last-child(1)'));
+            }
+            $newItems = $newItems.children();
+            $newItems.remove()
+        }
+
+        // change isotope alignment in RTL mode
+
+        if ( $portfolio.parents('html').attr('dir') === 'rtl') {
+            $isotope.isotope({
+                // options
+                itemSelector: '.item',
+                layoutMode: 'masonry',
+                masonry: {
+                    columnWidth: col
+                },
+                transitionDuration: '0.9s',
+                isOriginLeft: false,
+            });
+        } else {
+            $isotope.isotope({
+                // options
+                itemSelector: '.item',
+                layoutMode: 'masonry',
+                masonry: {
+                    columnWidth: col
+                },
+            });
+        }
+
+        $isotope.append($newItems);
+        $isotope.isotope('appended', $newItems);
+        $(window).scrollTop(scroll);
+        //Filter Click
+        $filters.click(function (e) {
+            e.preventDefault();
+            var $link = $(this),
+                selector = $link.attr('data-filter');
+
+            $isotope.isotope({filter: selector});
+            $filters.parent().siblings().removeClass('current');
+            $link.parent().addClass('current');
+            $('.layout-container').siblings('div').each(function () {
+                if ($(this).height() > $('.layout-container').height()) {
+                    $(this).css('height', $('.layout-container').height());
+                }
+            });
+        });
+        if ($(window).width() < 900) {
+            $(this).find('.md-post-like').css('display', 'none');
+            $('.overlay-background').click(function () {
+                var $this = $(this);
+                if ($this.css('opacity') == '0') {
+                    $this.find('.md-post-like').css('display', 'inline');
+                    $this.find('.md-post-like').click(function () {
+                        $this.mouseleave();
+                    })
+                }
+            });
+            $('.overlay-background').mouseleave(function () {
+
+                $(this).find('.md-post-like').css('display', 'none');
+            })
+        }
+
+    });
+
+
+}
+window_load_functions.pixflow_portfolioMultisize = [];
+
+function pixflow_load_portfolio_multisize(){
+    //Fix Iphone/Ipad: fire resize when scrolling
+    if($(window).width()!= windowWith) {
+        windowWith=$(window).width();
+        pixflow_portfolioMultisize();
+    }
+}
+window_resize_functions.pixflow_load_portfolio_multisize = [];
+
+// @TODO : refactor
+function pixflow_itemSize($this, $items, padding) {
+    'use strict';
+
+    var $portfolio = $this.closest('.portfolio-multisize'),
+        portfolioWidth = $this.width(),
+        col = 0;
+
+    if (portfolioWidth >= 1024 && portfolioWidth <= 1920) {
+        col = 6;
+    } else if (portfolioWidth > 1920) {
+        col = $portfolio.find('.portfolio-item').length;
+    } else if (portfolioWidth < 1024 && portfolioWidth > 770) {
+        col = 4;
+    } else {
+        col = 1;
+    }
+
+    col = Math.floor(portfolioWidth / col);
+    var doublePadding = padding * 2,
+        metaHeight = 0;
+
+    if ($portfolio.hasClass('outside')) {
+        metaHeight = 90;
+    }
+
+    $items.each(function () {
+
+        var $item = $(this),
+            $itemImage = $item.find('.item-image');
+        if (portfolioWidth > 769) { //Normal styles
+
+            if ($item.hasClass('thumbnail-large')) { //Thumbnail Large
+
+                $item.css({
+                    'width': Math.round(col * 2) + 'px',
+                    'height': Math.round(col * 1.722) + metaHeight + 'px',
+                    'padding': padding + 'px'
+                });
+
+                $itemImage.css({
+                    'width': Math.round(col * 2 - doublePadding) + 'px',
+                    'height': Math.round(col * 1.722 - doublePadding) + 'px'
+                });
+
+            } else if ($item.hasClass('thumbnail-medium')) { //Thumbnail Medium
+
+                $item.css({
+                    'width': Math.round(col * 2) + 'px',
+                    'height': Math.round(col * 1.203) + metaHeight + 'px',
+                    'padding': padding + 'px'
+                });
+
+                $itemImage.css({
+                    'width': Math.round(col * 2 - doublePadding) + 'px',
+                    'height': Math.round(col * 1.203 - doublePadding) + 'px'
+                });
+
+            } else { //Thumbnail small
+
+                $item.css({
+                    'width': col + 'px',
+                    'height': Math.round(col * 1.203) + metaHeight + 'px',
+                    'padding': padding + 'px'
+                });
+
+                $itemImage.css({
+                    'width': col - doublePadding + 'px',
+                    'height': Math.round(col * 1.203 - doublePadding) + 'px'
+                });
+            }
+        } else { //Responsive styles
+            $item.css({
+                'width': col + 'px',
+                'height': Math.round(col * .563) + metaHeight + 'px',
+                'padding': 0
+            });
+
+            $itemImage.css({
+                'width': col + 'px',
+                'height': Math.round(col * .563) + 'px'
+            });
+        }
+    });
+    return col;
+}
+// @TODO : refactor
+function pixflow_portfolioLoadMore() {
+    "use strict";
+
+    if (pixflow_detectPosition() != 'front-end') {
+        return;
+    }
+
+    $('.loadmore-button').each(function () {
+
+        var $this = $(this),
+            portfolioID = $this.attr('data-portfolio-id'),
+            $portfolio = $('.' + portfolioID),
+            $portfolioContainer = $portfolio.find('.portfolio-container'),
+            $BTN = $portfolio.find('a.button'),
+            nextLink = $this.attr('data-nextLink'),
+            loadMoreText = $this.attr('data-loadMoreText'),
+            loadingText = $this.attr('data-loadingText'),
+            noMorePostText = $this.attr('data-noMorePostText'),
+            startPage = parseInt($this.attr('data-startPage')),
+            nextPage = startPage + 1,
+            max = parseInt($this.attr('data-maxPages')),
+            isLoading = false;
+        if (max < 2) {
+            if (startPage > 1) {
+                $BTN.find('span').html(noMorePostText);
+                $BTN.fadeOut(3000);
+            }
+            return
+        }
+
+        //Replace links with load more button
+        $BTN.find('span').html(loadMoreText);
+        var $btn = $BTN,
+            $btnText = $BTN.find('span');
+        if (nextPage > max) {
+            $btnText.html(noMorePostText);
+            $BTN.fadeOut(3000);
+        }
+
+        $btn.click(function (event) {
+            event.preventDefault();
+            var scrollPosition = $(window).scrollTop();
+            if (nextPage > max || isLoading)
+                return;
+            isLoading = true;
+            var items = [];
+            //Set loading text
+            $btnText.html(loadingText);
+            var $pageContainer = $('<div class="posts-page-' + nextPage + '"></div>');
+            var $pagedNum = 'paged';
+            nextLink = nextLink.replace(/\/page\/[0-9]+/, '/?' + $pagedNum + '=' + parseInt(nextPage));
+            nextLink = nextLink.replace(/paged=[0-9]+/, $pagedNum + '=' + parseInt(nextPage));
+            nextLink = nextLink.replace(/paged_[0-9]+=[0-9]+/, $pagedNum + '=' + parseInt(nextPage));
+            var index = $('.portfolio-multisize').index($(this).closest('.portfolio-multisize'));
+            $pageContainer.load(nextLink + ' .portfolio-container', function () {
+                var count = 0;
+                if ($portfolioContainer.hasClass($portfolioContainer.closest('.portfolio-multisize').attr('data-id') + 'fixed-height')) {
+                    $portfolioContainer.removeClass($portfolioContainer.closest('.portfolio-multisize').attr('data-id') + 'fixed-height');
+                }
+                $pageContainer.find('.portfolio-container:eq(' + index + ')').find('.portfolio-item').each(function () {
+                    var $item = $('<div></div>');
+                    $item.attr('class', $(this).attr('class'));
+                    $item.html($(this).html());
+                    items.push($item);
+                    count++
+                });
+                items = items.reverse();
+                for (var i in items) {
+                    $portfolioContainer.append(items[i]);
+                }
+                pixflow_portfolioMultisize($portfolioContainer, count);
+
+
+                $pageContainer.remove();
+                // Update page number and nextLink.
+                nextPage++;
+                if (/\/page\/[0-9]+/.test(nextLink)) {
+                    nextLink = nextLink.replace(/\/page\/[0-9]+/, '/page/' + nextPage);
+                } else {
+                    nextLink = nextLink.replace(/paged1=[0-9]+/, 'paged=' + nextPage);
+                }
+
+                if (nextPage <= max) {
+                    $btnText.html(loadMoreText);
+                } else if (nextPage > max) {
+                    $btnText.html(noMorePostText);
+                    $btn.fadeOut(3000);
+                }
+
+                //call popup for new items
+                pixflow_portfolioPopup();
+
+                isLoading = false;
+                var num = nextPage;
+                num--;
+
+                var $items = $('.portfolio-item');
+                var $container = $('.portfolio-container');
+                $(window).scrollTop(scrollPosition);
+
+            });
+            return false;
+        });
+    });
+
+}
+window_load_functions.pixflow_portfolioLoadMore = [];
+
+// @TODO: refactor
+function pixflow_portfolioPopup() {
+    'use strict';
+
+    $('body').on('click',".inside .item-wrap.portfolio-popup",function(e){
+        var element= e.target || e.srcElement;
+        if ((e.which != 2) && ($(window).width() > 1024)) {
+            if (element.attributes.class.nodeValue.indexOf('icon') < 0) {
+                $.magnificPopup.open({
+                    items: {
+                        src: $(this).find(".item-image").attr('data-src')
+                    },
+                    overflowY:'scroll',
+                    type: 'image',
+                    closeOnContentClick: false,
+                    closeBtnInside: false,
+                    mainClass: 'mfp-with-zoom mfp-img-mobile',
+                    callbacks: {
+                        beforeOpen: function () {
+                        },
+                        afterClose: function () {
+                            $("html").css({'overflow-y': 'auto'});
+                        },
+                    }
+                }, 0);
+            }
+        }
+    });
+    $('body').on('click', ".outside .item-image.portfolio-popup", function () {
+
+        if (($(window).width() > 1024)) {
+            $.magnificPopup.open({
+                items: {
+                    src: $(this).attr('data-src')
+                },
+                overflowY:'scroll',
+                type: 'image',
+                closeOnContentClick: false,
+                closeBtnInside: false,
+                mainClass: 'mfp-with-zoom mfp-img-mobile',
+                callbacks: {
+                    beforeOpen: function () {
+                    },
+                    afterClose: function () {
+                        $("html").css({'overflow-y': 'auto'});
+                    },
+                }
+            }, 0);
+        }
+    });
+
+}
+document_ready_functions.pixflow_portfolioPopup = [];

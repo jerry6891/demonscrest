@@ -1,0 +1,182 @@
+/************************************************************
+                Blog Masonry
+************************************************************/
+.blog-masonry-container{
+    float:left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 15px 35px;
+    transition: all 300ms;
+}
+.blog-masonry-container:hover{
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15)!important;
+    -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15)!important;
+    margin-top: -4px;
+}
+.blog-masonry-container .quote-img{
+    margin: 40px 0 -10px 35px;
+}
+.blog-masonry-container .blog-masonry-content{
+    margin: 30px 35px 35px;
+}
+.blog-masonry-container .blog-masonry-content .blog-cat{
+    border-radius: 35px;
+    padding: 5px 16px;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 35px;
+    margin-right: 8px;
+}
+.blog-masonry-container .blog-masonry-content .blog-date{
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 23px;
+    opacity: 0.7;
+}
+.blog-masonry-container .blog-masonry-content .blog-date a,
+.blog-masonry-container .blog-masonry-content .blog-cat a{
+    font-size: 13px;
+}
+.blog-masonry-container .blog-masonry-content .blog-title{
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 30px;
+    margin-top: 20px;
+    transition: color .3s;
+}
+.blog-masonry-container .blog-masonry-content .blog-excerpt{
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 23px;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+.blog-masonry-container.quote .blog-masonry-content .blog-excerpt{
+    margin-top: 20px;
+}
+.blog-masonry-container .blog-masonry-content .post-share{
+    float: left;
+    width: 38px;
+    height: 38px;
+    margin-top: 35px;
+}
+
+.blog-masonry-container .blog-masonry-content .post-share .share{
+    width: 36px;
+    height: 36px;
+    display: block;
+    opacity: 1;
+    transition: opacity 0.8s;
+}
+
+.blog-masonry-container .blog-masonry-content .post-share .share-hover{
+    width: 36px;
+    height: 36px;
+    display: block;
+    margin-top: -36px;
+    opacity: 0;
+    transition: opacity 0.8s;
+}
+
+.blog-masonry-container .blog-masonry-content .post-share:hover .share-hover{
+    opacity: 1;
+}
+.blog-masonry-container .blog-masonry-content .post-share:hover .share{
+    opacity: 0;
+}
+/* comment btn */
+.blog-masonry-container .blog-masonry-content .post-like-holder,
+.blog-masonry-container .blog-masonry-content .post-share{
+    float: right;
+    margin: 25px 8px 22px 0;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    opacity: 0.7;
+    text-align: center;
+}
+.blog-masonry-container .blog-masonry-content .like-heart,
+.blog-masonry-container .blog-masonry-content .share,
+.blog-masonry-container .blog-masonry-content .share-hover{
+    width: 36px;
+    height: 36px;
+    display: block;
+    transition: all 0.8s ease-out;
+    border-radius: 100%;
+    border: 1px solid rgba(140,135,135,0.7);
+}
+.blog-masonry-container .blog-masonry-content .like-heart i,
+.blog-masonry-container .blog-masonry-content .share i,
+.blog-masonry-container .blog-masonry-content .share-hover i{
+    position: absolute;
+    color: #cfcfcf;
+}
+.blog-masonry-container .blog-masonry-content .like-heart i{
+    right: 9px;
+    top: 11px;
+    font-size: 17px;
+}
+.blog-masonry-container .blog-masonry-content .share i,
+.blog-masonry-container .blog-masonry-content .share-hover i{
+    right: 11px;
+    font-size: 16px;
+    top: 10px;
+}
+.blog-masonry-container .blog-masonry-content .like-count{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    color: #fff;
+    display: none;
+}
+.blog-masonry-container .blog-masonry-content .post-like-holder:hover i{
+    display: none;
+}
+.blog-masonry-container .blog-masonry-content .post-like-holder:hover .post-like-hover{
+    opacity: 0.7;
+}
+.blog-masonry-container .blog-masonry-content .post-like-holder:hover .post-like-hover span{
+    opacity: 0.7;
+}
+.blog-masonry-container .blog-masonry-content .post-like-holder:hover .post-like{
+    opacity: 0;
+}
+.blog-masonry-container .blog-masonry-content .post-like-holder:hover .like-count{
+    display: block
+}
+.blog-masonry-container .blog-masonry-content .post-like-holder:hover .like-heart{
+    border: none;
+    background-color: #CFCFCF
+}
+.blog-masonry-container li.images {
+    height: 250px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.blog-masonry-container.standard img {
+    width: 100%;
+    transition: all 400ms;
+}
+.blog-masonry-container.video .video .video-img{
+    max-width: 100%;
+}
+
+.blog-masonry-container .blog-details{
+    position: absolute;
+    top: 15px;
+    right: 13px;
+    z-index:2;
+}
+
+.blog-masonry-container .blog-date .px-icon{
+    margin-right:5px;
+}
+
+.blog-masonry-container .post-like-holder{
+    margin-right: -3px !important;
+}

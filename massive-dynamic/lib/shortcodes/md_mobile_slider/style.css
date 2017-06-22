@@ -1,0 +1,113 @@
+/* -------------------------------------------------
+                Mobile Slider Shortcode
+----------------------------------------------------*/
+
+.col-sm-2 .mobile-slider .flexslider .slide-image {
+    margin-top: 8px;
+    border-radius: 0;
+}
+
+.mobile-slider .flex-control-nav {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 57px;
+}
+
+.mobile-slider .flex-control-nav {
+    list-style-type: none;
+    text-align: center;
+}
+
+.mobile-slider .flex-control-nav li {
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.mobile-slider .flex-control-nav li:last-child:after {
+    content: '';
+}
+
+.mobile-slider .flex-control-nav li.flex-active {
+    opacity: 1;
+}
+
+.mobile-slider .flexslider {
+    max-width: 745px;
+    margin: 0 auto;
+    position: relative;
+    background: none;
+    border: none;
+}
+
+.mobile-slider .flexslider {
+    width: 90%;
+    height: 90%;
+}
+
+.mobile-slider .flexslider .slides {
+    list-style-type: none;
+}
+
+.mobile-slider .flexslider .mobile-frame {
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    height: 593px;
+    right: 0;
+    margin: auto;
+    width: 264px;
+    transform: scale(1.009);
+}
+
+.mobile-slider .flexslider .slide-description {
+    margin-bottom: 67px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+    height: 64px;
+    overflow: hidden;
+    padding: 0 7%;
+}
+
+.mobile-slider .flexslider .slide-image {
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.mobile-slider .flexslider .flex-control-paging {
+    margin-top: 86px;
+    z-index: 9;
+}
+
+.mobile-slider .flexslider .flex-control-paging li a {
+    width: 6px;
+    height: 6px;
+}
+
+.mobile-slider .flexslider .flex-direction-nav a {
+    width: 13%;
+    height: 13%;
+    top: 38%;
+}
+
+.md-align-left.mobile-slider .flexslider{
+    margin-left:0;
+    max-width:300px;
+}
+.md-align-center.mobile-slider .flexslider{
+    margin:0 auto;
+}
+.md-align-right.mobile-slider .flexslider{
+    float:right;
+    max-width:300px;
+}
+.md-align-right.mobile-slider:after{
+    content: ' ';
+    display: block;
+    clear: both;
+}

@@ -1,0 +1,57 @@
+/**************************************
+        Pixflow Price Table
+**************************************/
+.pixflow-price-table.md-align-center .price-table-container{float: none;}
+.pixflow-price-table.md-align-left .price-table-container{float: left;}
+.pixflow-price-table.md-align-right .price-table-container{float: right;}
+
+.pixflow-price-table .price-table-container{
+    border-radius: 15px;
+    display: inline-block;
+    text-align: center;
+    width:98%;
+    max-width: 365px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    margin-top:4px;
+    padding: 50px 30px 30px 35px;
+}
+.pixflow-price-table .price-table-container:hover{
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 0;
+}
+.pixflow-price-table .price-container .price{
+    font-size: 80px;
+}
+
+.pixflow-price-table .price-container .currency{
+    font-size: 30px;
+    vertical-align: top;
+    line-height: 60px;
+}
+
+.pixflow-price-table .title{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 10px 30px 15px 30px;
+}
+
+.pixflow-price-table .separator{
+    margin-bottom: 5px;
+}
+
+.pixflow-price-table .separator span{
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.pixflow-price-table .description{
+    font-size: 16px;
+    line-height: 2em;
+}
+.pixflow-price-table .price-table-button{
+    margin-top: 37px;
+}

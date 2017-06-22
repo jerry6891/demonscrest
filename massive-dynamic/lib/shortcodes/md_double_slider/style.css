@@ -1,0 +1,102 @@
+/***********************************
+        Double Slider
+************************************/
+.double-slider{
+    position: relative;
+}
+
+.double-slider .flex-direction-nav{
+    display: none;
+}
+.double-slider .double-slider-text-container,
+.double-slider .double-slider-image-container{
+    width:50%;
+    float: left;
+}
+.double-slider.double-slider-right .double-slider-text-container,
+.double-slider.double-slider-right .double-slider-image-container{
+    float: right;
+}
+.double-slider .double-slider-text-container{
+    transition: background 1s;
+    position: relative;
+}
+.double-slider .double-slider-text-container .double-slider-slides{
+    /*transition-delay: 600ms*/
+}
+.double-slider .flex-control-paging{
+    display: none;
+}
+.double-slider .double-slider-text-container li{
+    height: 100%;
+}
+.double-slider .double-slider-container{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 70% !important;
+    float: right;
+    margin-right: 15%;
+}
+.double-slider .double-slider-container p,
+.double-slider .double-slider-container h3,
+.double-slider .double-slider-container a{
+    color: inherit;
+}
+.double-slider .double-slider-container p.double-slider-sub-title{
+    font-weight:normal;
+    font-size:14px;
+    opacity:.5;
+    margin-bottom:20px;
+    transition: transform 200ms ease;
+}
+.double-slider .double-slider-container p.double-slider-description{
+    font-weight:normal;
+    font-size:14px;
+    opacity:.7;
+    margin-top:20px;
+    transition: transform 200ms 100ms ease;
+}
+.double-slider .double-slider-container h3.double-slider-title{
+    font-weight: bold;
+    font-size: 51px;
+    line-height: 1.2em;
+    transition: transform 200ms 80ms ease;
+}
+.double-slider .double-slider-container .double-slider-nav{
+    margin-top:20px;
+}
+.double-slider .double-slider-image-container ul li div{
+    background-position: center;
+}
+.double-slider-nav{
+    opacity:.6;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.double-slider-nav a{
+    font-size:18px;
+    position: absolute;
+}
+.double-slider .double-slider-prev{
+    left: 50px;
+}
+
+.double-slider .double-slider-next{
+    right: 50px;
+}
+
+.double-slider .double-slider-text-container li{
+    opacity:0;
+    transition:opacity 300ms ;
+}
+.double-slider .double-slider-text-container li.flex-active-slide{
+    opacity:1;
+}
+.double-slider .double-slider-text-container li.clone{
+    opacity:1;
+}

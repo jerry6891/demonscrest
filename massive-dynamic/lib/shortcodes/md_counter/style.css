@@ -1,0 +1,36 @@
+/********************************************************
+                Counter 1
+********************************************************/
+.md-counter.md-align-left{text-align: left;}
+
+.md-counter.md-align-center{text-align: center;}
+
+.md-counter.md-align-right{text-align: right;}
+
+.md-counter .icon{
+    display: inline-block;
+    font-size: 55px;
+    font-weight: normal;
+}
+.md-counter .icon i{
+    vertical-align: super;
+}
+.md-counter .text{
+    display: inline-block;
+    margin-left: 10px;
+    text-align: left;
+}
+.md-counter .timer{
+    font-size: 55px;
+    font-weight: normal;
+    line-height: 55px;
+    opacity: 0;
+    width: 120px;
+    margin-bottom: 5px;
+}
+.md-counter .title{
+    font-size:18px;
+    font-weight:normal;
+    opacity: 0.7;
+    line-height: 18px;
+}

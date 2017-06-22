@@ -1,0 +1,156 @@
+/*------------------------------------------
+            Carousel Blog
+-------------------------------------------*/
+
+.post-carousel-container{
+    max-width: 1200px;
+    margin:0 auto 30px auto;
+    padding-bottom: 10px;
+
+}
+
+.post-carousel-container .flickity-viewport{
+    transition: height 0.4s ease-in;
+}
+
+.post-carousel-container .post-wrap{
+    height:470px;
+    width:29%;
+    margin-right: 23px;
+    margin-left:23px;
+    display: inline-block;
+    position: relative;
+    outline: none;
+    padding-top: 10px;
+    transition: opacity 0.5s ease-out;
+}
+
+.post-carousel-container .post-content-container{
+    padding-top:60px;
+    padding-left:60px;
+    padding-right: 60px;
+    border-radius:5px;
+    transition: all 0.5s ease-out;
+    position: relative;
+}
+
+.post-carousel-container .post-content-container .blog-title{
+    font-size: 18px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+.post-carousel-container .post-content-container .post-description{
+    margin-top:18px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.post-carousel-container .post-content-container .post-description p{
+    margin-bottom: 25px;
+    line-height: 1.6em;
+}
+
+
+.post-carousel-container .post-content-container .post-separator{
+    width: 100%;
+    height: 1px;
+}
+
+
+.post-carousel-container .post-content-container .post-meta-container{
+    padding-bottom: 30px;
+}
+
+.post-carousel-container .post-content-container .post-author-image{
+    width:26px;
+    height:26px;
+    border-radius: 26px;
+    margin:25px auto 5px auto;
+}
+
+.post-carousel-container .post-content-container .post-author-image img{
+    width:26px;
+    height:26px;
+    border-radius: 26px;
+}
+
+.post-carousel-container .post-content-container .post-author-name , .post-carousel-container .post-content-container .post-author-name a{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 11px;
+}
+
+.post-carousel-container .vertical-separator {
+    width: 1px;
+    height: 30px;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+}
+
+.post-carousel-container .post-date{
+    width:100%;
+    text-align: center;
+    margin-top:30px;
+}
+
+.post-carousel-container .post-date .post-date-day{
+    font-size:37px;
+    font-weight: bold;
+}
+
+.post-carousel-container .post-date .post-date-month{
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform: uppercase;
+}
+
+
+.post-carousel-container .post-wrap{
+    opacity:0.5;
+}
+
+.post-carousel-container .post-wrap.is-selected{
+    opacity:1;
+}
+
+
+.post-carousel-container .flickity-page-dots .dot.is-selected {
+    height:11px;
+}
+
+.post-carousel-container .flickity-page-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-radius: 30px;
+}
+
+.post-carousel-container .flickity-page-dots .dot {
+    background-color: rgba(0,0,0,0.3);
+    width: 6px;
+    height: 6px;
+    opacity: 1;
+    transition: all 0.1s ease-in;
+    display: inline-block;
+}
+
+.flickity-page-dots .dot.is-selected{
+    border-radius: 5px;
+}
+
+.post-carousel-container .flickity-page-dots {
+    bottom: 0;
+}
+
+.post-carousel-container .flickity-slider{
+    padding-top: 20px;
+}
+
+.post-carousel-container .post-wrap:not(.is-selected) .post-content-container{
+    -webkit-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 1.5px 9px 0 rgba(0,0,0,0.2);
+}

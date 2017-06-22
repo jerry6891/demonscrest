@@ -1,0 +1,13 @@
+
+{
+    "js":[
+        "assets/js/isotope.min.js",
+        "assets/js/magnificpopup.min.js"
+    ],
+    "css": [
+        "assets/css/magnific-popup.min.css"
+    ],
+    "shortcode": [
+        "md_button"
+    ]
+}

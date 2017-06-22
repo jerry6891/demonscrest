@@ -1,0 +1,14 @@
+
+{
+    "js":[
+        "assets/js/flickity.min.js",
+        "assets/js/slick.min.js"
+    ],
+    "css": [
+        "assets/css/flickity.min.css",
+        "assets/css/slick-slider.min.css"
+    ],
+    "shortcode": [
+        "md_button"
+    ]
+}

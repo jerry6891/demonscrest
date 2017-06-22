@@ -1,0 +1,10 @@
+{
+    "js":[
+        "assets/js/video-js/video.min.js",
+        "assets/js/video-js/vjs.vimeo.min.js",
+        "assets/js/video-js/youtube.min.js"
+    ],
+    "css": [
+        "assets/css/video-js.css"
+    ]
+}

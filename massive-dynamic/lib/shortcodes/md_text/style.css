@@ -1,0 +1,31 @@
+/*---------------------------------------------------------
+                      Text shortcode
+-----------------------------------------------------------*/
+.md-text-container{
+    display: flex;
+}
+
+.md-text-container.md-align-left {
+    justify-content:  flex-start;
+}
+
+.md-text-container.md-align-center {
+    justify-content:  center;
+}
+
+.md-text-container.md-align-right {
+    justify-content:  flex-end;
+}
+
+.md-text .md-text-title-separator{
+    max-width: 96%;
+}
+
+.md-text-button .shortcode-btn {
+    float: none !important;
+}
+
+.md-text .without-title,
+.md-text .without-content{
+    display: none;
+}

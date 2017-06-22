@@ -1,0 +1,47 @@
+/*---------------------------------------------------------
+                        Call To Action Shortcode
+---------------------------------------------------------*/
+
+.call-to-action {
+    background-position: center;
+    background-size: cover;
+    padding: 0 20px;
+}
+
+.call-to-action .content {
+    padding: 47px 0;
+    position: relative;
+}
+
+.call-to-action .content .title {
+    margin-bottom: 12px;
+    max-width: 70%;
+}
+
+.call-to-action .content .description {
+    font-size: 14px;
+    line-height: 21px;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.call-to-action .button-parent {
+    display: inline-block;
+}
+
+.col-sm-12 .call-to-action .description,
+.col-sm-11 .call-to-action .description,
+.col-sm-10 .call-to-action .description {
+    float: left;
+    margin-bottom: 0;
+    max-width: 70%;
+}
+
+.col-sm-12 .call-to-action .button-parent,
+.col-sm-11 .call-to-action .button-parent,
+.col-sm-10 .call-to-action .button-parent {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    padding: 0 0 0 20px;
+}

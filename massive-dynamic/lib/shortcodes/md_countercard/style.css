@@ -1,0 +1,42 @@
+/***************************
+        Counter Card
+***************************/
+.md-counter-card{
+    width: 97%;
+    height: 97%;
+    min-height: 195px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;
+    top:0;
+}
+
+.md-counter-card:hover{
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+    top: -4px;
+}
+
+.md-counter-card .counter .timer{
+    margin: auto;
+    margin-top: 5px;
+    font-size: 45px;
+}
+
+.md-counter-card .counter-icon{
+    margin-top: 7px;
+}
+
+.md-counter-card .counter-icon i{
+    font-size: 40px;
+}
+
+.md-counter-card .counter-text h2{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+    opacity: 0.7;
+}

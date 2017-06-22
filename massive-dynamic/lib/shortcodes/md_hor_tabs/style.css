@@ -1,0 +1,77 @@
+/******************************************************************
+                        Horizontal Tab
+******************************************************************/
+.vc_md_hor_tabs{
+    clear: both;
+}
+.md_hor_tab ul.px_tabs_nav {
+    float: left;
+}
+.md_hor_tab .wpb_tab {
+    float: left;
+}
+.md_hor_tab.wpb_content_element.wpb_tabs .wpb_tour_tabs_wrapper .wpb_tab{
+    width: 60%;
+    background-color: transparent;
+    padding-top: 0 ;
+    text-align: left;
+    padding: 0 !important;
+}
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab{
+    width: 40%;
+    position: relative;
+}
+.md_hor_tab.wpb_content_element .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: inline;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li{
+    float: none;
+    height: 65px;
+    display: table;
+    width: 100%;
+    z-index: 1;
+}
+
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li > a.ui-tabs-anchor,
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li > a{
+    float: none;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+}
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li > a .horTabTitle{
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li a i{
+    margin-right: 12px;
+    float: left;
+    font-size: 19px;
+    font-weight: normal;
+}
+.md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li a i.icon-angle-right{
+    float: right;
+    margin-right: 0;
+}
+.compose-mode .md_hor_tab.wpb_content_element .px_tabs_nav.px_tabs_nav{
+    z-index: 1;
+}
+
+.px_tabs_nav.md-custom-tab > li > a:active,.px_tabs_nav.md-custom-tab > li > a:hover,.px_tabs_nav.md-custom-tab > li > a:focus{
+    outline:0;
+}
+
+body.compose-mode div.wpb_tabs  li.unsortable > a.md-hor-tab-add-tab.vc_control-btn{
+    cursor: pointer;
+    padding:23px 0px;
+    min-height:84px
+}

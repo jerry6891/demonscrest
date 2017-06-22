@@ -1,0 +1,859 @@
+/* Index (priority) */
+
+/*
+
+
+1.  General
+2.  Header - Logo Top
+3.  Header - Modern Top
+4.  Footer
+5.  SC. Call To Action
+6.  SC. Accordion
+7.  SC. Toggle
+8.  SC. Business Toggle
+9.  SC. Tabs
+10. SC. Tab Horizontal
+11. SC. Lists
+12. SC. Counter
+13. SC. Count Box
+14. SC. Fancy Text
+15. SC. Subscribe Modern
+16. SC. Skills
+17. SC. Skills 2
+18. SC. Portfolio Multi Size
+19. SC. Portfolio Split
+20. SC. Portfolio Carousel
+21. Widget. Text
+22. Widget. Search
+23. SC. Testimonial
+24. SC. Image Box Full Width
+25. SC. Team Member Classic
+26. SC. Blog Classic
+27. SC. Blog Carousel
+28. SC. Blog Calendar
+29. SC. Blog Masonry
+30. Widget. Progreess Bar
+31. Blog Detail
+32. Business Bar
+33. Recent Project
+34. Search
+35. SC. Client Carousel
+36. Widget. Recent Portfolio
+37. Widget. Recent Entries
+38. SC. Portfolio Full
+39. SC. Subscribe
+
+
+*/
+
+
+/* 1. General */
+
+
+@charset "utf-8";
+
+html {
+    direction: ltr;
+}
+
+body {
+
+}
+
+
+body .layout-container {
+    direction: rtl;
+}
+
+body .layout-container header .icons-pack li {
+    margin: 0 0 0 15px;
+}
+
+/* 2. Header - Logo Top */
+
+
+body .layout-container header .content nav.navigation {
+    /*float: right;*/
+}
+
+body .layout-container header.top-logotop .style-logotop nav > ul > li:after {
+    left: 0;
+    right: inherit;
+}
+
+body .layout-container header.top-logotop .icons-pack {
+    margin-right: 20px;
+}
+
+
+body .layout-container header nav > ul > li.menu-item:first-child {
+    padding-left: 20px;
+}
+
+/* 3. Header - Modern Top */
+
+
+body .layout-container header.top-modern .first-part {
+    float: right;
+}
+
+
+/* 4. Footer */
+
+
+body .layout-container #footer-bottom .linear .logo {
+    float: right;
+}
+
+body .layout-container #footer-bottom .linear .social-icons {
+    float: left;
+    margin-right: 1em;
+}
+
+body .layout-container #footer-bottom .linear .copyright {
+    float: left;
+}
+
+
+/* 5. SC. Call To Action */
+
+
+body .layout-container .call-to-action .content .description {
+    float: right;
+}
+
+body .layout-container .call-to-action .button-parent {
+    direction: ltr;
+    left: 0;
+    right: inherit;
+}
+
+
+/* 6. SC. Accordion */
+
+
+body .layout-container .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header .ui-accordion-header-icon {
+    left: 0.83em;
+    right: inherit;
+}
+
+body .layout-container .wpb_accordion_section .wpb_accordion_header .icon_left {
+    text-align: right;
+    right: 1.5em;
+}
+
+body .layout-container .wpb_accordion .wpb_accordion_wrapper .wpb_accordion_header a {
+    text-align: right;
+    right: 2.5em;
+}
+
+body .layout-container .wpb_accordion_section .wpb_accordion_header {
+    /*    direction: rtl;*/
+}
+
+
+/* 7. SC. Toggle */
+
+
+body .layout-container .wpb_md_toggle .ui-accordion .wpb_accordion_section .ui-icon {
+    left: 0.83em;
+    right: inherit;
+}
+
+body .layout-container .wpb_md_toggle .wpb_accordion_section .icon_left {
+    right: 0.5em;
+    left: 20px;
+    max-width: 30px;
+}
+
+body .layout-container .wpb_md_toggle .wpb_toggle_wrapper .wpb_toggle_header a {
+    right: 4.5em;
+    text-align: right;
+}
+
+
+/* 8. SC. Business Toggle */
+
+
+body .layout-container .wpb_md_toggle2 .wpb_toggle_wrapper .wpb_toggle_header {
+    padding-right: 45px;
+    padding-left: inherit;
+}
+
+body .layout-container .wpb_md_toggle2 .wpb_toggle_wrapper .wpb_toggle_header span.ui-accordion-header-icon {
+    right: 0;
+    border-left: 2px solid;
+    border-right: none;
+}
+
+body .layout-container .wpb_md_toggle2 .wpb_toggle_header .icon_left {
+    right: 72px;
+    left: inherit;
+}
+
+body .layout-container .wpb_md_toggle2 h3.wpb_toggle_header a{
+    text-align: right;
+    display: block;
+    padding-right: 3.9em;
+    padding-left:0;
+}
+
+
+/* 9. SC. Tabs */
+
+
+body .layout-container .wpb_content_element .px_tabs_nav.md-custom-tab > li span {
+    right: 1em;
+}
+
+
+/* 10. SC. Tab Horizontal */
+
+
+body .layout-container .md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li a i.right-icon {
+    float: right;
+    margin-right: 0;
+}
+
+body .layout-container .md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li a i.right-icon:first-child {
+    margin-left: 12px;
+}
+
+body .layout-container .md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li > a .horTabTitle {
+    float: right;
+}
+
+body .layout-container .md_hor_tab.wpb_content_element .px_tabs_nav.md-custom-tab > li a i.icon-angle-right {
+    float: left;
+    transform: rotate(180deg);
+}
+
+body .layout-container .md_hor_tab.wpb_content_element ul.ui-tabs-nav {
+    float: right;
+}
+
+body .layout-container .md_hor_tab.wpb_content_element .wpb_tab.ui-tabs-panel {
+    text-align: right;
+}
+
+/* 11. SC. Lists */
+
+
+body .layout-container .list-shortcode ol > li:before {
+    right: -35px;
+    margin-left: 8px;
+    left: inherit;
+    margin-right: 0;
+}
+
+body .layout-container .list-shortcode ul li span {
+    padding-left: 16px;
+    padding-right: 0;
+}
+
+
+/* 12. SC. Counter */
+
+
+body .layout-container .md-counter .text {
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+/* 13. SC. Count Box */
+
+
+body .layout-container .md-countbox .timer {
+    opacity: 1;
+    float: right;
+    margin-left: 30px;
+    margin-right: 0;
+}
+
+body .layout-container .md-countbox .countbox-text {
+    float: right;
+    text-align: right;
+}
+
+body .layout-container .md-countbox .shortcode-btn {
+    float: right !important;
+}
+
+
+/* 14. SC. Fancy Text */
+
+
+body .layout-container .md-fancy-text .fancy-text-bg {
+    right: 0;
+    transform: translateX(0%);
+    left: inherit;
+}
+
+
+/* 15. SC. Subscribe Modern */
+
+
+body .layout-container .modern-subscribe .modern-subscribe-button {
+    margin-left: -100%;
+    transform: rotate(180deg);
+}
+
+body .layout-container .modern-subscribe .modern-subscribe-button:hover {
+    margin-left: -101%;
+}
+
+body .layout-container .modern-subscribe .subscribe-content {
+    float: right;
+}
+
+/* 16. SC. Skills */
+
+
+body .layout-container .skill-style1:not(.style2) .bar-percentage {
+    float: right;
+    margin-left: 15px;
+    text-align: right;
+}
+
+body .layout-container .skill-style1:not(.style2) .bar-title {
+    right: 3px;
+    text-align: right;
+}
+
+
+/* 17. SC. Skills 2 */
+
+
+body .layout-container .skill-style1.style2 .bar-title {
+    right: 3px;
+    text-align: right;
+}
+
+body .layout-container .skill-style1.style2 .bar-percentage {
+    text-align: left;
+}
+
+body .layout-container .middle-bar .circle {
+    float: left;
+}
+
+
+/* 18. SC. Portfolio Multi Size */
+
+
+body .layout-container .isotope.clearfix.portfolio-container {
+    direction: ltr;
+}
+
+body .layout-container .portfolio.inside .overlay-background {
+    left: inherit;
+}
+
+body .layout-container .portfolio.inside .item-meta {
+    right: 30px;
+    left: inherit;
+}
+
+body .layout-container .portfolio.inside .item-meta h5 {
+    text-align: right;
+    margin-right: 25px;
+    margin-left: 0;
+}
+
+.portfolio.inside .item:hover .item-category {
+    margin-right: 0;
+}
+
+body .layout-container .portfolio.inside .item-title {
+    padding-left: 100px;
+    margin-right: -100px;
+    padding-right: inherit;
+    margin-left: inherit;
+    text-align: right;
+}
+
+body .layout-container .portfolio.inside .item:hover .item-title {
+    margin-right: 0;
+    padding-left: 0;
+}
+
+body .layout-container .portfolio.inside .md-post-like {
+    right: 30px;
+    left: inherit;
+}
+
+body .layout-container .portfolio.inside .heading .filter {
+    /*float: right;*/
+}
+
+/* 19. SC. Portfolio Split */
+
+
+body .layout-container .portfolio-split .box_size .data .attributes .left {
+    float: right;
+}
+
+body .layout-container .portfolio-split .box_size .data .attributes .right {
+    float: left;
+}
+
+body .layout-container .type-portfolio .buttons .like .value {
+    display: inline;
+}
+
+
+/* 20. SC. Portfolio Carousel */
+
+
+body .layout-container .owl-carousel.owl-loaded {
+    direction: ltr;
+}
+
+body .layout-container .portfolio-carousel .box_size.clearfix > div:first-child {
+    float: right;
+}
+
+body .layout-container .portfolio-carousel .box_size.clearfix > div:last-child {
+    float: right;
+}
+
+body .layout-container .portfolio-carousel .meta {
+    border-right: 1px solid rgba(0,0,0,0.2);
+    border-left: none;
+    padding-right: 9%;
+    padding-left: 0;
+}
+
+body .layout-container .portfolio-carousel .attribute .left:last-child {
+    float: right;
+}
+
+
+/* 21. Widget. Text */
+
+
+body .layout-container footer .widget-area .widget-title {
+    text-align: right;
+}
+
+body .layout-container footer .widget-area .widget {
+    text-align: right;
+}
+
+body .layout-container footer .widget-md-text .text-widget-desc p {
+    padding-right: 0;
+    padding-left: 40px;
+}
+
+body .layout-container footer .widget-md-text #text-widget-btn {
+    margin-left: 3em;
+    direction: ltr;
+}
+
+/* 22. Widget. Search */
+
+
+body .layout-container footer .widget_search input:last-child {
+    left: 15px;
+    right: inherit;
+    transform: rotate(180deg);
+}
+
+body .layout-container footer .widget_search input:first-child {
+    padding-right: 2em;
+}
+
+body .layout-container footer .widget_search input:last-child:hover {
+    left: 11px;
+    right: inherit;
+}
+
+
+/* 23. SC. Testimonial */
+
+
+body .layout-container .testimonial-classic.testimonial-classic-left {
+    text-align: right;
+}
+
+
+/* 24. SC. Image Box Full Width */
+
+
+body .layout-container .imagebox-full.align-left {
+    padding: 55px 5% 40px 19%;
+    text-align: right;
+}
+
+body .layout-container .imagebox-full.align-left .shortcode-btn {
+    float: right !important;
+    direction: ltr;
+}
+
+body .layout-container .imagebox-full.align-center .shortcode-btn a.button{
+    margin: auto;
+    direction: ltr;
+    max-width: 12em;
+}
+
+
+/* 25. SC. Team Member Classic */
+
+
+body .sliphover-container .sliphover-overlay div {
+    text-align: right;
+    direction: rtl;
+}
+
+body .sliphover-container .sliphover-overlay .teammember-classic .social-icons {
+    float: right;
+}
+
+
+/* 26. SC. Blog Classic */
+
+
+body .layout-container .classic-blog-left .enblog-classic-container {
+    text-align: right;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-categories {
+    text-align: right;
+    float: right;
+    padding-right: 55px;
+    padding-left: 0;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-info-container  {
+    float: right;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-title {
+    text-align: right;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-info {
+    text-align: right;
+    margin-right: 25px;
+    margin-left: 0;
+}
+
+body .layout-container .classic-blog-left .loop-post-content a.continue-reading {
+    margin-right: 55px;
+    margin-left: 0;
+}
+
+body .layout-container .classic-blog-left .loop-post-content a.continue-reading {
+    margin-right: 55px;
+    margin-left: 0;
+    float: right;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .sharing {
+    float: left;
+    margin-left: 55px;
+    margin-right: 0;
+}
+
+body .layout-container .classic-blog .loop-post-content .continue-reading-arrow {
+    transform: rotate(180deg);
+    margin-right: 1em;
+    display: inline-block;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .classic-blog-content p {
+    width: 100%;
+    line-height: 24px;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-media .post-author-meta {
+    right: 15px;
+    left: inherit;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-media .post-author-meta .author-image {
+    float: right;
+}
+
+body .layout-container .classic-blog-left .loop-post-content .post-media .post-author-meta .post-author {
+    margin-left: 0;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 25px;
+}
+
+body .layout-container .post-pagination {
+    direction: ltr;
+}
+
+
+/* 27. SC. Blog Carousel */
+
+
+body .layout-container .post-carousel-container .post-content-container .blog-title {
+    text-align: right;
+}
+
+body .layout-container .post-carousel-container .post-content-container .post-description {
+    text-align: right;
+}
+
+
+/* 28. SC. Blog Calendar */
+
+
+body .layout-container .calendar-blog .blog-container h6,
+body .layout-container .calendar-blog p {
+    right: 7%;
+}
+
+body .layout-container .calendar-blog .blog-cat {
+    float: right;
+}
+
+body .layout-container .calendar-blog .blog-comment {
+    position: relative;
+    left: 7%;
+    width: 2.5em;
+}
+
+
+/* 29. SC. Blog Masonry */
+
+
+body .layout-container .blog-masonry-container .blog-details {
+    left: 13px;
+    right: inherit;
+}
+
+body .layout-container .blog-masonry-container .blog-date .px-icon {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+
+/* 30. Widget Progreess Bar */
+
+
+body .layout-container .widget_md_progress .progress-list .bar-percentage {
+    float: right;
+}
+
+body .layout-container .widget_md_progress .progress-list .title {
+    right: 3px;
+    left: inherit;
+    text-align: right;
+}
+
+
+/* 31. Blog Detail */
+
+
+body .layout-container .post-content .author-section .title {
+    float: right;
+    width: 3%;
+}
+
+body .layout-container .post-content .author-section .line {
+    float: left;
+}
+
+body .layout-container .post-content .author-section .image {
+    float: right;
+}
+
+body .layout-container .post-content .recent-post .single_related {
+    float: right;
+}
+
+body .layout-container .post-content .recent-post .single_related a {
+    text-align: right;
+}
+
+body .layout-container .comments .comments-list .comment-image {
+    float: right;
+}
+
+body .layout-container .comments .comments-list .comment-content {
+    float: right;
+    margin-left: inherit;
+    margin-right: 20px;
+}
+
+body .layout-container .comments .comments-list .comment-meta .name {
+    float: right;
+    direction: ltr;
+}
+
+body .layout-container .comments .comments-list .comment-edit-link {
+    float: right;
+    border-left: 1px solid #CAC9C9;
+    border-right:  none;
+}
+
+body .layout-container .comments .comments-list .comment-reply-link {
+    float: left;
+}
+
+body #content .post-comment-holder {
+    float: left;
+    left: inherit;
+}
+
+body.blog #content .post-comment-holder {
+    margin-top: 25px;
+}
+
+body.blog #content .post-share,
+body.archive #content .post-share {
+    left: 1em;
+    bottom: inherit;
+    right: inherit;
+    position: relative;
+    float: left;
+}
+
+body #content .post-comment-hover span {
+    right: 56%;
+}
+
+body.archive #content .loop-post-content .post-comment-holder {
+    margin: 0 0 30px 10px !important;
+}
+
+body.archive #content .loop-post-content .post-share {
+    margin: 0 0 30px 0 !important;
+}
+
+body.blog .loop-post-content p .more-link {
+    float: right;
+}
+
+body.blog .loop-post-content p .more-link i,
+body.archive .loop-post-content p .more-link i {
+    float: left;
+    transform: rotate(180deg);
+}
+
+body.archive .loop-post-content p .more-link {
+    top: 35px;
+    position: relative;
+}
+
+body .post-content .post-tags {
+    float: right;
+    display: flex;
+}
+
+body .post-content .post-share {
+    float: left;
+}
+
+body .post-content .post-tags a:first-child {
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+/* 32. Business Bar */
+
+
+body .layout-container .business .info-container {
+    float: right;
+}
+
+body .layout-container .business .social {
+    float: left;
+}
+
+body .layout-container .business .item {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+body .layout-container .business .info-container span {
+    float: right;
+    margin-left: 12px;
+    margin-right: 5px;
+}
+
+
+/* 33. Recent Project */
+
+
+body .layout-container .recent-project .single_related {
+    float: right;
+}
+
+
+/* 34. Search */
+
+
+body #notification-tabs #search-input{
+    text-align: right;
+}
+
+body #notification-tabs .clear-button {
+    right: inherit;
+}
+
+/* 35. Client Carousel */
+
+.wrap-client-carousel {
+    direction: ltr;
+}
+
+/* 36. Widget Recent Portfolio */
+
+body .layout-container footer .widget-area .widget-md-recent-portfolio .item-list .item {
+    margin: 0 0 9px 9px;
+    float: right;
+}
+
+/* 37. Widget Recent Entries */
+
+body .layout-container footer .widget-area .widget.widget_recent_entries ul li {
+    background-position: right 7px;
+}
+
+body .layout-container footer .widget-area .widget.widget_recent_entries ul li a {
+    margin-right: 20px;
+    margin-left: inherit;
+}
+/* Widget Recent Post */
+body .widget.widget-md-recent-post .item-image{
+    float: right;
+    margin-right:auto;
+    margin-left: 10px;
+}
+body .widget.widget-md-recent-post .item-info{
+    float: right;
+}
+
+/* 38. SC. Portfolio Full */
+
+body .layout-container .portfolio-full .recent-project {
+    text-align: right;
+}
+
+/* 39. SC. Subscribe */
+
+body .layout-container .sc-subscribe button i.button-icon.icon-angle-right {
+    transform: rotate(180deg);
+    margin-right: 0.8em;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+
+    body .list-shortcode,
+    body .list-shortcode ul li   {
+        text-align: right;
+    }
+}
+
+
+body .layout-container .mBuilder_row_controls,body .layout-container .mBuilder_controls {
+    direction: ltr;
+}

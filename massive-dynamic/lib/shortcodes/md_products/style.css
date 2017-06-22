@@ -1,0 +1,218 @@
+
+.products .product .purchase-buttom-holder{
+    position: relative;
+    overflow: hidden;
+}
+
+.products .product .onsale{
+    left: 15px!important;
+    top: 15px!important;
+    right: auto!important;
+    margin: 0!important;
+    width: 80px;
+    height: 80px;
+    line-height: 83px;
+    text-transform: uppercase;
+    color: #202020;
+    background-color: #fff;
+    font-size: 15px;
+    padding: 0;
+    z-index: 1;
+}
+
+.products .product .add_to_cart_button{
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    margin-top: 0!important;
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    padding: 0!important;
+    border-radius: 0;
+    background-color: #fcfcfc;
+    font-size: 22px;
+    transition: all 300ms;
+}
+
+.products .product .add_to_cart_button:hover{
+    color: #fff;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.products .product:hover .add_to_cart_button{
+    right: 0;
+    bottom: 0;
+}
+
+.products .button.add_to_cart_button.loading:after{
+    display: none;
+}
+
+.products .button.add_to_cart_button.loading .icon{
+    display: none;
+}
+
+.products .product .added_to_cart{
+    visibility: hidden;
+    display: block;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.products li.product a img{
+    display: none;
+}
+
+.products .product .thumb-image,
+.products .product .hover-image{
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+}
+
+.products .product .thumb-image{
+    position: relative;
+    transition: opacity 300ms;
+}
+
+.products .product .hover-image{
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.products .product:hover .thumb-image{
+    opacity: 0;
+}
+
+.products .product h3{
+    font-size: 15px!important;
+    line-height: 15px;
+    padding: 0!important;
+    margin: 25px 0 10px!important;
+    font-weight: 300;
+}
+
+.modern-style-product .products .product h3{
+    font-size: 22px!important;
+    line-height: 22px;
+    font-weight: 600;
+    letter-spacing: -0.4px;
+    margin-bottom: 15px!important;
+}
+
+.products .product .price{
+    font-size: 14px!important;
+    color: #0d0d0d!important;
+    margin-top: 5px;
+}
+
+.modern-style-product .products .product .price{
+    font-size: 14px!important;
+    line-height: 14px;
+    margin-bottom: 20px!important;
+    color: #717171!important;
+}
+
+.modern-style-product .star-rating{
+    font-family: 'pixflow-font-library';
+    width: 108px;
+    font-size: 10px;
+    margin-bottom: 0.8em!important;
+    line-height: 1.1em;
+}
+
+.modern-style-product .star-rating:before,
+.modern-style-product .star-rating span:before{
+    content: "\ebeb\00a0\00a0\ebeb\00a0\00a0\ebeb\00a0\00a0\ebeb\00a0\00a0\ebeb";
+}
+
+.modern-style-product .star-rating:before{
+    color: #797979;
+}
+
+.woocommerce ul.products li.product .price del{
+    display: inline-block!important;
+}
+
+.products .product .price del{
+    display: inline-block!important;
+}
+
+.products .product .price ins{
+    text-decoration: none;
+    font-weight: normal!important;
+    color: #cab561;
+}
+
+.vc_editor .added_to_cart.wc-forward{
+    display: none;
+}
+
+.added .icon-shopcart{
+    display: none;
+}
+
+.woocommerce #respond input#submit.added:after, .woocommerce a.button.added:after, .woocommerce button.button.added:after, .woocommerce input.button.added:after{
+    margin: 0 auto;
+}
+
+.woocommerce .page-title{
+    font-size: 45px;
+    line-height: 45px;
+    margin: 35px 0;
+}
+
+.woocommerce .woocommerce-result-count{
+    font-size: 14px;
+}
+.woocommerce .woocommerce-ordering{
+    margin: -20px 0 20px;
+}
+
+.woocommerce .woocommerce-ordering select{
+    padding: 5px;
+}
+
+.woocommerce .woocommerce-ordering select:focus{
+    outline: none;
+}
+/*******    WooCommerce Columns   *******/
+
+/* 4 columns */
+.woocommerce ul.products li.product{
+    /* width: 23.2% ;
+     margin-right: 1.8% ;*/
+
+    width: calc( 100% /4 - 18px );
+    margin-right: 20px;
+}
+
+/* 2 columns */
+.woocommerce.columns-2 ul.products li.product{
+    width: calc(100% / 2 - 15px);
+}
+
+/* 3 columns */
+.woocommerce.columns-3 ul.products li.product{
+    width: calc(100% / 3 - 18px);
+}
+
+/* 5 columns */
+.woocommerce.columns-5 ul.products li.product{
+    width: calc(100% / 5 - 18px);
+}
+
+/* 6 columns */
+.woocommerce.columns-6 ul.products li.product{
+    width: calc(100% / 6 - 18px);
+}
+
+.woocommerce ul.products li.last{
+    margin-right: 0;
+}

@@ -1,0 +1,21 @@
+/* widget-contact-info */
+
+.light .widget-contact-info-content p,
+.light-sidebar .widget-contact-info-content p {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.dark .widget-contact-info-content p,
+.dark-sidebar .widget-contact-info-content p {
+    color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.widget-contact-info-content div,
+.widget-contact-info-content div span {
+    margin-bottom: 5px;
+}
+
+footer .widget-contact-info-content {
+    min-height: 130px;
+    min-width: 240px;
+}

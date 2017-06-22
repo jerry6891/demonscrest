@@ -1,0 +1,263 @@
+/**** Pixflow Slider ****/
+.pixflow-slider.slick-slider{
+    margin: 0;
+    /*-webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition:         all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);*/
+}
+
+.pixflow-slider .pixflow-slide-bg{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    will-change: transform;
+}
+.pixflow-slider .pixflow-slide{
+    position: relative;
+    width: 100%;
+    /*height: 979px;*/
+    overflow: hidden;
+}
+
+.pixflow-slide-container .slide-subtitle{
+    display: inline-block;
+}
+
+
+.pixflow-slide-container .slide-desc{
+    font-size: 28px;
+    line-height: 1em;
+}
+.pixflow-slider-dots-container .current-slide-no,
+.md-pixflow-slider.classic .pixflow-slider-dots-container {
+    display: none;
+}
+
+.pixflow-slider-dots ,
+.pixflow-slider .flickity-page-dots{
+    list-style: none;
+    float: left;
+    height: 60px;
+    display: table;
+}
+
+.pixflow-slider .flickity-page-dots{
+    position: absolute;
+    bottom: 0;
+    left: 18%;
+    text-align: left;
+    display: inline-block;
+    width:auto;
+}
+
+.pixflow-slider-dots .pixflow-slider-dot{
+    padding-right: 20px;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.pixflow-slider .flickity-page-dots .dot{
+    padding-right: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    width: 27px;
+    height: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s;
+    margin:0 5px;
+}
+
+.pixflow-slider-dots-container .current-slide-no.background--light{
+    color: black;
+}
+.pixflow-slider-dots.background--light .pixflow-slider-dot .circle-dot ,
+.pixflow-slider .flickity-page-dots .dot.background--light{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.pixflow-slider-dots.background--light .pixflow-slider-dot.active .circle-dot,
+.pixflow-slider .flickity-page-dots .dot.background--light.is-selected{
+    background-color: black;
+}
+
+.pixflow-slider-dots-container .current-slide-no.background--dark{
+    color: #ffffff;
+}
+.pixflow-slider-dots.background--dark .pixflow-slider-dot.active .circle-dot,
+.pixflow-slider .flickity-page-dots .dot.background--dark.is-selected{
+    background-color: #ffffff;
+}
+.pixflow-slider-dots.background--dark .pixflow-slider-dot .circle-dot,
+.pixflow-slider .flickity-page-dots .dot.background--dark{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.pixflow-slider-dots-container .current-slide-no.background--complex{
+    color: grey;
+}
+.pixflow-slider-dots.background--complex .pixflow-slider-dot.active .circle-dot,
+.pixflow-slider .flickity-page-dots .dot.background--complex.is-selected{
+    background-color: grey;
+}
+
+.md-pixflow-slider .pixflow-slide .pixflow-slide-overlay{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+/*Classic Skin*/
+
+.md-pixflow-slider.classic .pixflow-slide-container{
+    position: absolute;
+    top: 50%;
+    max-width: 40%;
+    z-index: 2;
+}
+
+.md-pixflow-slider.classic .flickity-viewport{
+    /*width:100%;*/
+}
+
+.md-pixflow-slider.classic.hr-left .pixflow-slide-container > div{
+    position: relative;
+    left:0;
+}
+
+.md-pixflow-slider.classic.hr-left .pixflow-slide-container{
+    left: 18%;
+    transform: translateY(-50%);
+    text-align: left;
+}
+
+.md-pixflow-slider.classic.hr-center .pixflow-slide-container{
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.md-pixflow-slider.classic .pixflow-slide-container .slide-content-image,
+.md-pixflow-slider.classic .pixflow-slide-container .slide-content-image img{
+    max-height: 210px;
+}
+
+.md-pixflow-slider.classic .pixflow-slide-container .slide-content-image{
+    margin-bottom: 15px;
+}
+
+.md-pixflow-slider.classic .pixflow-slider-dots-container{
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+}
+.md-pixflow-slider.classic .pixflow-slider-dots .pixflow-slider-dot .circle-dot{
+    width: 30px;
+    height: 8px;
+    cursor: pointer;
+    border-radius: 7px;
+    display: block;
+    transition: all 0.3s;
+}
+.md-pixflow-slider.classic .pixflow-slide-container .slide-desc{
+    display: none;
+}
+
+.md-pixflow-slider.classic .pixflow-slide-container .slide-subtitle{
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.md-pixflow-slider.classic .pixflow-slide-container .slide-title{
+    font-size: 70px;
+    line-height: 1.1em;
+    margin-bottom: 20px;
+}
+
+.md-pixflow-slider.classic .btn-container {
+    height: 54px;
+}
+
+.md-pixflow-slider.classic .shortcode-btn {
+    margin: 2px 5px 0 0;
+    height: 54px;
+    padding: 0;
+}
+
+.md-pixflow-slider.classic .shortcode-btn .button-standard.button{
+    backface-visibility: hidden;
+}
+
+.md-pixflow-slider.classic .shortcode-btn .button-standard.fade-oval{
+    padding: 17px 24px !important;
+    margin: 0 !important;
+}
+/* Vertical Skin */
+.md-pixflow-slider.vertical .pixflow-slide-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    max-width: 70%;
+    text-align: center;
+}
+.md-pixflow-slider.vertical .pixflow-slider-dots-container{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(90deg);
+}
+.md-pixflow-slider.vertical .pixflow-slider-dots-container .current-slide-no{
+    margin-right: 30px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    float: left;
+    display: block;
+}
+.md-pixflow-slider.vertical .pixflow-slider-dots .pixflow-slider-dot .circle-dot{
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.3s;
+}
+.md-pixflow-slider.vertical .pixflow-slider-dots .pixflow-slider-dot.active .circle-dot{
+    height: 24px;
+    width: 5px;
+    border-radius: 3px;
+}
+.md-pixflow-slider.vertical .pixflow-slide-container .slide-subtitle{
+    color: #FFF;
+    padding: 10px 20px;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.md-pixflow-slider.vertical .pixflow-slide-container .slide-title{
+    font-size: 100px;
+    line-height: 1em;
+    margin-bottom: 20px;
+}
+
+.md-pixflow-slider.indicator-dark .flickity-page-dots .dot{
+    background-color:#333;
+}
+
+
+.md-pixflow-slider.indicator-light .flickity-page-dots .dot{
+    background-color:#F4FDFF;
+}
+
+
+.md-pixflow-slider{
+    overflow-y: hidden;
+}

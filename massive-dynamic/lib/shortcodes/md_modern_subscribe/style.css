@@ -1,0 +1,80 @@
+/***********************************
+        Modern Subscribe
+************************************/
+.modern-subscribe{
+    overflow: hidden;
+    border-radius: 5px;
+    max-width: 1043px;
+    margin: 0 auto;
+}
+.modern-subscribe .mc4wp-form, .widget-area .mc4wp-form, .sc-subscribe .mc4wp-form {
+    display: none;
+}
+
+.modern-subscribe.shadow{
+    -webkit-box-shadow: 0 0 92px rgba(0,0,0,.24);
+    -moz-box-shadow: 0 0 92px rgba(0,0,0,.24);
+    box-shadow: 0 0 92px rgba(0,0,0,.24);
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.modern-subscribe .subscribe-content{
+    float: left;
+    width: 50%;
+    padding:73px 100px 0 90px;
+}
+.modern-subscribe .modern-subscribe-title{
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 30px;
+    width: 60%;
+}
+
+.modern-subscribe .modern-subscribe-desc{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-top: 30px;
+}
+
+.modern-subscribe .send{
+    margin-top: 45px;
+}
+
+.modern-subscribe .subscribe-image{
+    float: left;
+    width: 50%;
+    min-height: 485px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.modern-subscribe .modern-subscribe-textbox{
+    border:none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    height: 35px;
+    box-shadow: none;
+    border-bottom: 1px solid;
+
+}
+.modern-subscribe .modern-subscribe-textbox.left{
+    margin-top: 25px;
+}
+
+.modern-subscribe .modern-subscribe-button{
+    background-color: transparent;
+    border: none;
+    width: 13px;
+    height: 11px;
+    outline: none;
+    margin-left: -20px;
+    margin-top:37px;
+    transition: margin 0.2s;
+}
+
+.modern-subscribe .modern-subscribe-button:hover{
+    margin-left: -18px;
+}

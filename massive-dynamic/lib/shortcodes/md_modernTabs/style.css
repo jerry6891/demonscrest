@@ -1,0 +1,72 @@
+/*---------------------------------------------------------
+                        Modern Tab Shortcode
+---------------------------------------------------------*/
+.md_modernTab .px_tabs_nav.md-custom-tab>li{
+    height: 80px;
+    background-color: transparent;
+    margin: 0;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0;
+    background-image: none;
+    list-style: none!important;
+    float: left;
+    transition: color .5s,background-color .5s,opacity 0.5s;
+}
+
+.wpb_content_element.md_modernTab .px_tabs_nav.md-custom-tab > li > a {
+    padding: 30px 18px 30px;
+    float: right;
+}
+
+.md_modernTab .px_tabs_nav.md-custom-tab > li i{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.md_modernTab.wpb_content_element .px_tabs_nav li.ui-tabs-active,
+.md_modernTab.wpb_content_element .px_tabs_nav li:hover {
+    background: none;
+}
+
+.md_modernTab.wpb_content_element .wpb_accordion_wrapper .wpb_accordion_header,
+.md_modernTab.wpb_content_element.wpb_tabs .wpb_tour_tabs_wrapper .wpb_tab {
+    background: none;
+}
+
+.md_modernTab.wpb_content_element .px_tabs_nav {
+    text-align: center;
+}
+
+.md_modernTab.wpb_tabs > .wpb_wrapper > .px_tabs_nav li {
+    float: none;
+    display: inline-block;
+
+}
+
+.md_modernTab ul.px_tabs_nav li .left-icon {
+    float: none;
+}
+
+.md_modernTab ul.px_tabs_nav .modernTabTitle {
+    margin-top: 10px;
+}
+
+.wpb_content_element.md_modernTab .px_tabs_nav.md-custom-tab > li > a {
+    padding: 30px 18px 30px;
+}
+
+body.compose-mode .wpb_tabs  .unsortable > a.md-modernTab-add-tab{
+    cursor: pointer;
+    padding:40px 0px;
+    min-height:84px;
+    text-align: center;
+}
+
+body .wpb_content_element .wpb_tour_tabs_wrapper .wpb_tab {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}

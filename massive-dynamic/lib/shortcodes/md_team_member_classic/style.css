@@ -1,0 +1,18 @@
+/*----------------------------------------------------------
+                    Team Member Classic
+--------------------------------------------------------- */
+
+.team-member-classic {
+    position: relative;
+}
+
+.team-member-classic .content {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100% !important;
+}
+
+.team-member-classic .content .social-icons li:hover {
+    opacity: 0.6;
+}

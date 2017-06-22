@@ -1,0 +1,12 @@
+
+{
+    "js":[
+        "assets/js/jquery.flexslider-min.js"
+    ],
+    "css": [
+        "assest/css/flexslider.min.css"
+    ],
+    "shortcode": [
+        "md_subscribe"
+    ]
+}

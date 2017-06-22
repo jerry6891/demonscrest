@@ -1,0 +1,106 @@
+/*---------------------------------------------------------
+                        Tabs Shortcode
+---------------------------------------------------------*/
+
+
+.md_custom_tabs .px_tabs_nav li{
+    float: left;
+}
+
+.md_custom_tabs .px_tabs_nav li {
+    background-color: #FFF;
+    white-space: nowrap;
+    padding: 0;
+    background-image: none;
+    list-style: none!important;
+}
+
+.wpb_column .md_custom_tabs{margin-bottom: 0}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li {
+    background-color: transparent;
+    margin: 0;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: center;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li,
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li i {
+    transition: color .5s, background-color .5s, opacity 0.5s;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li {
+    height: 80px;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li > a {
+    padding: 26px 25px 30px 13px;
+    float: right;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li > a {
+    text-align: center;
+    display: block;
+    float:none;
+    padding:26px 0 30px 0;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li i {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 30px;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li i{
+    margin-left:0
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li span{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li i.no-title {
+    position: absolute;
+    top: 0;
+    margin: auto;
+    bottom: 0;
+    text-align: center;
+    right: 0;
+    left: 0;
+    vertical-align: middle;
+    height: 24px;
+}
+
+.md_custom_tabs .px_tabs_nav.md-custom-tab > li i.icon-no-icon {
+    display: none;
+}
+
+.md_tab.wpb_tabs {
+    border: #d5d4d4 1px solid;
+}
+
+.md_tab ul.px_tabs_nav li .left-icon {
+    float: left;
+}
+
+body .md_custom_tabs .wpb_tour_tabs_wrapper .wpb_tab {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+body.compose-mode .md_custom_tabs  .unsortable > a.md-tab-add-tab{
+    cursor: pointer;
+    padding:30px 35px;
+    min-height:84px;
+}
+
+.wpb_content_element:not(.md_modernTab) .px_tabs_nav.md-custom-tab>li>a {
+    text-align: center;
+    display: block;
+    float: none;
+    padding: 26px 0 30px 0;
+}

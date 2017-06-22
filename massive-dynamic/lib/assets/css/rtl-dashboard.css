@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+html {
+
+}
+
+body {
+
+}
+
+body form .support-forum {
+    direction: ltr;
+    left: 0;
+    right: inherit;
+}
+
+body form .composer-switch .wpb_switch-to-customizer {
+    margin-left: 0;
+    margin-right: 6px;
+}

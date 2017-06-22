@@ -1,0 +1,45 @@
+/*--------------------------------------
+         Subscribe Business
+--------------------------------------*/
+.business-subscribe.md-align-left .subscribe-content {
+    text-align: left;
+}
+
+.business-subscribe.md-align-center .subscribe-content{
+    text-align: center;
+}
+
+.business-subscribe.md-align-right .subscribe-content{
+    text-align: right;
+}
+
+.business-subscribe .mc4wp-form{
+    display: none;
+}
+.business-subscribe .business-subscribe-email-input{
+    height: 65px;
+    max-width: 385px;
+    padding-right: 25px;
+    padding-left: 25px;
+    outline: none;
+    text-align: left;
+    border-radius: 3px 0 0 3px;
+    background: transparent;
+    text-transform:none ;
+}
+.business-subscribe .business-subscribe-button{
+    height: 65px;
+    width: 170px;
+    border-radius: 0 3px 3px 0;
+    border: none;
+    margin-left: -7px;
+    color:#fff;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 22px;
+    position: relative;
+}
+.business-subscribe .business-subscribe-button i{
+    margin-left: 5px;
+    vertical-align: middle;
+}

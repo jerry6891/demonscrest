@@ -1,0 +1,9 @@
+{
+    "js":[
+        "assets/js/slick.min.js"
+    ],
+    "css": [
+        "assets/css/slick.min.css" ,
+        "assets/css/slick-theme.min.css"
+    ]
+}
